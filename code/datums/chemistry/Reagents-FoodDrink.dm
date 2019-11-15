@@ -262,7 +262,7 @@ datum
 			taste = "spooky"
 
 		fooddrink/alcoholic/beepskybeer
-			name = "Beepskybräu Security Schwarzbier"
+			name = "Beepskybrï¿½u Security Schwarzbier"
 			id = "beepskybeer"
 			description = "A dark German beer, typically served with dark bread, cream cheese, and an intense appreciation for the law."
 			reagent_state = LIQUID
@@ -1008,6 +1008,16 @@ datum
 			alch_strength = 3
 			description = "A Drink then you'll have that's not bad - / At least, so they say in Jamaica!"
 			reagent_state = LIQUID
+		
+		fooddrink/alcoholic/rcola
+			name = "Rum and Cola"
+			id = "rcola"
+			fluid_r = 115
+			fluid_g = 38
+			fluid_b = 77
+			alch_strength = 2
+			description = "It's fizzy, it's tangy, and perfect for when you can't decide if you wanna get the jitters or knock yourself out!"
+
 
 		fooddrink/alcoholic/maitai
 			name = "Mai Tai"
@@ -1118,7 +1128,7 @@ datum
 			reagent_state = LIQUID
 
 		fooddrink/alcoholic/pinacolada
-			name = "Piña Colada"
+			name = "Piï¿½a Colada"
 			id = "pinacolada"
 			fluid_r = 255
 			fluid_g = 255

@@ -775,6 +775,15 @@ datum
 			result_amount = 2
 			mix_phrase = "The ghosts of starlets past waft by."
 			mix_sound = 'sound/misc/drinkfizz.ogg'
+		
+		rum_and_cola
+			name = "Rum and Cola"
+			id = "rcola"
+			result = "rcola"
+			required_reagents = list("rum" = 1, "cola" = 1)
+			result_amount = 2
+			mix_phrase = "A sweet and bitter aroma fills the air."
+			mix_sound = 'sound/misc/drinkfizz.ogg'
 
 		cocktail_gchronic
 			name = "Gin and Chronic"
