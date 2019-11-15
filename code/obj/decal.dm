@@ -1181,6 +1181,12 @@
 	icon_state = "dirt"
 	random_dir = 1
 
+/obj/decal/cleanable/dirt/variety
+	New()
+		..()
+		icon_state = pick("dirt", "dirt_2", "dirt_3", "dirt_4", "dirt_5")
+		return()
+
 /obj/decal/cleanable/cobweb
 	name = "cobweb"
 	desc = "Someone should remove that."

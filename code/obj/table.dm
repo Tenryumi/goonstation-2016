@@ -106,6 +106,10 @@
 		auto = 1
 		auto_type = /obj/table/wood/round/auto
 
+obj/table/wood/pool
+	name = "billiard table"
+	desc = "A specially shaped wooden table with green baize covering the top, for playing billiards games."
+
 /obj/table/reinforced
 	name = "reinforced table"
 	desc = "A table made from reinforced metal, it is quite strong and it requires welding and wrenching to disassemble it."

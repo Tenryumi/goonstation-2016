@@ -2485,7 +2485,96 @@
 	icon_state = "yellow"
 	permarads = 1
 
-///////////////////////////////
+/////////////////////////////// Adosteel
+
+/area/adosteel
+	name = "Adosteel"
+	icon_state = "green"
+	filler_turf = "/turf/unsimulated/dirt"
+
+/area/adosteel/lobby
+	name = "Adosteel Lobby"
+	icon_state = "blue"
+
+/area/adosteel/hallway
+	name = "Adosteel Hallway"
+	icon_state = "blue"
+
+/area/adosteel/hallway/west
+	name = "Adosteel Western Hallway"
+	icon_state = "blue"
+
+/area/adosteel/lounge
+	name = "Adosteel Lounge"
+	icon_state = "blue"
+
+/area/adosteel/arcade
+	name = "Adosteel Arcade"
+	icon_state = "blue"
+
+/area/adosteel/cantina
+	name = "Adosteel Cantina"
+	icon_state = "blue"
+
+/area/adosteel/cantina/bar
+	name = "Adosteel Cantina Bar"
+	icon_state = "blue"
+
+/area/adosteel/cantina
+	name = "Adosteel Cantina"
+	icon_state = "blue"
+
+/area/adosteel/showers
+	name = "Adosteel Showers"
+	icon_state = "blue"
+
+/area/adosteel/showers/male
+	name = "Adosteel Men's Showers"
+	icon_state = "blue"
+
+/area/adosteel/showers/female
+	name = "Adosteel Women's Showers"
+	icon_state = "purple"
+
+/area/adosteel/dorms
+	name = "Adosteel Dormitory"
+	icon_state = "purple"
+
+/area/adosteel/dorms/male
+	name = "Adosteel Men's Dormitory"
+	icon_state = "blue"
+
+/area/adosteel/dorms/female
+	name = "Adosteel Women's Dormitory"
+	icon_state = "purple"
+
+/area/adosteel/maintenance
+	name = "Adosteel Maintenance"
+	icon_state = "yellow"
+
+/area/adosteel/maintenance/furnace
+	name = "Adosteel Furnace Room"
+	icon_state = "yellow"
+
+/area/adosteel/outdoors
+	name = "Adosteel Swamps"
+	icon_state = "green"
+
+	// copypasta of crypt rain code because idk what I'm doing pls no bully
+
+	New()
+		..()
+
+		overlays += image(icon = 'icons/turf/areas.dmi', icon_state = "rain_overlay", layer = EFFECTS_LAYER_BASE)
+	
+	skip_sims = 1
+	sims_score = 0
+
+/area/adosteel/outdoors/teleporter
+	name = "Adosteel Teleport Center"
+	icon_state = "green"
+	
+
 
 /*
 /area/derelict
