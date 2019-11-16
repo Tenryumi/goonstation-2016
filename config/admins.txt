@@ -4,7 +4,6 @@ stuntwaffle - Host
 pantaloons - Host
 darsant - Host
 nannek - Host
-gowst - Host
 
 exadv1 - Coder
 0staf - Coder
