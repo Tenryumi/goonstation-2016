@@ -911,6 +911,17 @@ datum
 			id = "necroni2"
 			required_reagents = list("negroni" = 2, "ectoplasm" = 1)
 			result_amount = 3
+		
+		cocktail_honktonc
+			name = "Honky Tonic"
+			id = "honky_tonic"
+			result = "honky_tonic"
+			required_reagents = list("tonic" = 1, "lube" = 1, "colors" = 1, "neurotoxin" = 1)
+			result_amount = 4
+			mix_phrase = "The drink honks at you! What the fuck?"
+			mix_sound = 'sound/misc/drinkfizz_honk.ogg'
+			drinkrecipe = 1
+
 
 		squeeze
 			name = "Squeeze"

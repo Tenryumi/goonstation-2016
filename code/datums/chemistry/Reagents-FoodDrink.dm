@@ -263,6 +263,7 @@ datum
 
 		fooddrink/alcoholic/beepskybeer
 			name = "Beepskybr�u Security Schwarzbier"
+			name = "Beepskybr�u Security Schwarzbier"
 			id = "beepskybeer"
 			description = "A dark German beer, typically served with dark bread, cream cheese, and an intense appreciation for the law."
 			reagent_state = LIQUID
@@ -1017,7 +1018,116 @@ datum
 			fluid_b = 77
 			alch_strength = 2
 			description = "It's fizzy, it's tangy, and perfect for when you can't decide if you wanna get the jitters or knock yourself out!"
+			reagent_state = LIQUID
 
+		fooddrink/alcoholic/honky_tonic
+			name = "Honky Tonic"
+			id = "honky_tonic"
+			fluid_r = 255
+			fluid_g = 102
+			fluid_b = 204
+			alch_strength = 2
+			description = "The true miracle of this bastardization of mixology is that it somehow isn't lethal."
+			reagent_state = LIQUID
+
+			// Occasionally weakens and stuns the mob. Sometimes they honk. More rarely, they might even randomly say something stupid against their will.
+			on_mob_life(var/mob/M)
+				if(!M) M = holder.my_atom
+				src = null
+				if(prob(10))
+					boutput(M, "<span style=\"color:red\">Your body feels like it's being tickled from the inside out!</span>")
+					M.stunned += 2
+					M.weakened += 2
+					M.emote("laugh")
+					M.visible_message("<span style=\"color:red\">[M] sneezes. \His sneeze sounds like a honk!</span>")
+					playsound(M.loc, "sound/items/bikehorn.ogg", 50, 1)
+				if (prob(4))
+					//Create an alphabet soup of random phrases and force the mob to say it!
+					var/message = null
+					var/messageStart = pick(
+						"Man, I sure feel like a",\
+						"You are a",\
+						"My mother once told me that I was born a",\
+						"Father always said all I needed was a",\
+						"That's just like the time I ate a",\
+						"Aunty Muriel was always prone to giving me a",\
+						"Your face looks like a",\
+						"Spoiler alert! We're all living inside of a",\
+						"Tonight we're gonna go on a trip in a",\
+						"Save me! I'm being attacked by a",\
+						"Brainstorming time; let's try making a",\
+						"Let's try feeding the captain a",\
+						"Chill out and dive right into the",\
+						"Take off the clown's mask to reveal a",\
+						"I heard you talking about me! You said I was a",\
+						"Y'know, right now I could totally go for a",\
+						"I read in a book once that in each and every one of us is a",\
+						"I asked the captain what he thought of me, and he just turned to me and said I was a",\
+						"You and me? We're just like a ")
+					var/messageAdjective = pick(
+						" REALLY big ",\
+						" smelly ",\
+						" delicious ",\
+						" sweet sweet ",\
+						" totally bodacious ",\
+						"n awesomely radical ",\
+						" super stinky ",\
+						"n ugly-ass ",\
+						" dum-dum bum-bum ",\
+						" gorgeous and beautiful ",\
+						" gramatically incorrect ",\
+						" needlessly vulgar and generally problematic ",\
+						" fucking dumbass bullshit poopie ",\
+						" tired old ",\
+						" mentally corrupt ",\
+						" pretentious little ",\
+						" not-so-robust ",\
+						" flowery and aromatic ",\
+						" fourth-wall breaking ",\
+						" dirty yellow-bellied ",\
+						" drunken and drugged ",\
+						"n uncannily realistic")
+					var/messageNoun = pick(
+						"ghost!",\
+						"freak!",\
+						"pirate!",\
+						"lawyer with WAY too much free time.",\
+						"man made of meat.",\
+						"bowl of word soup.",\
+						"bee.",\
+						"novel without a proper ending.",\
+						"space station!",\
+						"monkey.",\
+						"frog.",\
+						"space god.",\
+						"monster made of madness.",\
+						"wizard!",\
+						"burrito.",\
+						"ass." ,\
+						"cluwne.")
+					var/messageEnd = null
+					if (prob(50))
+						messageEnd = pick(
+							" What did I mean by this?",\
+							" And that's not even half of it!",\
+							" Thanks for coming to my presentation.",\
+							" Thank you have a good day.",\
+							" I'M the traitor by the way!",\
+							" Please free me from this chemical prison.",\
+							" And that's just the tip of the iceberg!",\
+							" By the way, I'm hungry.",\
+							" Sorry, was that too much information?",\
+							" Momma told me to keep that a secret though.",\
+							" Sorry, didn't mean to make myself cry!",\
+							" Sorry, I may be a little tipsy.",\
+							" I never looked at life the same way ever since I learned that.",\
+							" Deep, huh?",\
+							" I still ponder the meaning of it to be honest.",\
+							" I still haven't gotten over that.")
+					message = messageStart + messageAdjective + messageNoun + messageEnd
+					M.say(message)
+				..(M)
+				return
 
 		fooddrink/alcoholic/maitai
 			name = "Mai Tai"
