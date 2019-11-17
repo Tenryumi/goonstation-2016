@@ -243,6 +243,7 @@
 "ff" = (/obj/shrub{dir = 9; icon_state = "shrub"},/turf/unsimulated/grasstodirt{dir = 1},/area/adosteel/outdoors)
 "fg" = (/turf/unsimulated/wall/auto,/obj/spacevine,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 4; name = "exterior window"},/area/adosteel/hallway)
 "fh" = (/obj/river{dir = 1; icon_state = "river"},/turf/unsimulated/grasstodirt{dir = 10},/area/adosteel/outdoors)
+"fp" = (/obj/decal/cleanable/dirt/variety,/obj/decal/cleanable/blood/tracks{dir = 4},/turf/unsimulated/floor/bluewhite{dir = 1},/area/adosteel)
 "fq" = (/turf/unsimulated/floor/bluewhite{dir = 1},/area/adosteel)
 "fy" = (/turf/unsimulated/floor/purplewhite{dir = 9},/area/adosteel)
 "fA" = (/obj/machinery/door/window/northleft{name = "Prize Counter"},/turf/unsimulated/floor/carpet/arcade,/area/adosteel/arcade)
@@ -261,7 +262,6 @@
 "gL" = (/turf/unsimulated/floor/bluewhite{dir = 9},/area/adosteel)
 "gP" = (/turf/unsimulated/wall/auto/reinforced,/area/adosteel/lounge)
 "gQ" = (/obj/machinery/power/apc{dir = 8; name = "W APC"; noalerts = 1; operating = 1; pixel_x = -24; pixel_y = 0; start_charge = 12},/obj/cable{d2 = 4; icon_state = "0-4"; pixel_y = 0},/turf/unsimulated/floor/carpet{dir = 8; icon_state = "red2"},/area/adosteel/cantina/bar)
-"gU" = (/obj/machinery/optable,/turf/unsimulated/floor/white,/area/adosteel)
 "gV" = (/obj/table/reinforced/auto,/obj/item/device/healthanalyzer_upgrade{pixel_x = 8; pixel_y = 1},/obj/item/injector_belt{pixel_x = -6; pixel_y = 11},/obj/item/paper{name = "memo"; pixel_x = -7; pixel_y = -3},/turf/simulated/floor/carpet{icon_state = "fblue1"; dir = 2},/area/adosteel)
 "gW" = (/obj/machinery/chem_dispenser,/turf/unsimulated/floor/caution/west,/area/adosteel)
 "gY" = (/turf/unsimulated/floor/plating,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 2; name = "exterior window"},/area/adosteel)
@@ -306,7 +306,6 @@
 "kJ" = (/obj/storage/closet/biohazard,/turf/unsimulated/floor/caution/east,/area/adosteel)
 "kO" = (/obj/decal/poster/wallsign/gym,/turf/unsimulated/wall/auto,/area/adosteel/hallway)
 "kU" = (/obj/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/turf/unsimulated/wall/auto,/area/adosteel/lounge)
-"kV" = (/turf/unsimulated/floor/purple/side{dir = 10},/area/adosteel)
 "li" = (/obj/machinery/light,/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
 "lj" = (/obj/table/round/auto,/obj/item/reagent_containers/food/drinks/mug{dir = 2; pixel_x = 6; pixel_y = 3},/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
 "ln" = (/obj/disposalpipe/segment,/turf/unsimulated/wall/auto,/area/adosteel/cantina)
@@ -320,7 +319,6 @@
 "lP" = (/obj/stool/chair/blue{icon_state = "chair-b"; dir = 4},/obj/machinery/firealarm{dir = 8; pixel_x = -26; pixel_y = -1; text = "NF"},/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
 "lT" = (/obj/machinery/door/airlock/pyro/glass{dir = 4; id = "medbay_entrance"; name = "Medbay Entrance"; req_access_txt = "5"},/obj/machinery/door/firedoor/pyro{dir = 4},/turf/unsimulated/floor/delivery,/area/adosteel)
 "lW" = (/obj/tree1{dir = 2},/turf/unsimulated/grass,/area/adosteel)
-"md" = (/obj/machinery/door/airlock/pyro/medical{dir = 8; name = "Operating Theatre"; req_access_txt = "5"},/obj/machinery/door/firedoor/pyro{dir = 8},/turf/unsimulated/floor/delivery,/area/adosteel)
 "mh" = (/obj/table/round/auto,/obj/table/round/auto,/obj/item/shaker/mustard{pixel_x = -7; pixel_y = 7},/obj/item/shaker/ketchup{pixel_x = 0; pixel_y = 7},/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
 "ml" = (/obj/decal/fakeobjects/lighttube_broken{icon_state = "tube-broken"; dir = 1},/turf/unsimulated/floor/bluewhite{dir = 9},/area/adosteel)
 "mq" = (/obj/machinery/power/apc{dir = 2; name = "S APC"; noalerts = 1; operating = 1; pixel_y = -24; start_charge = 13},/obj/cable{d2 = 4; icon_state = "0-4"; pixel_y = 0},/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
@@ -333,6 +331,7 @@
 "mL" = (/turf/unsimulated/floor/purplewhite{dir = 1},/area/adosteel)
 "mM" = (/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 4; name = "exterior window"},/turf/unsimulated/floor/plating,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 10; name = "exterior window"},/area/adosteel)
 "mN" = (/obj/table/reinforced/auto,/obj/item/robodefibrilator{pixel_x = 2; pixel_y = -10},/obj/item/hemostat{pixel_x = -2; pixel_y = 3},/obj/item/staple_gun{pixel_x = -1; pixel_y = 13},/obj/decal/fakeobjects/lighttube_broken{dir = 4; icon_state = "tube-broken"},/turf/unsimulated/floor/blue,/area/adosteel)
+"mO" = (/obj/storage/closet/wardrobe/white/research,/turf/unsimulated/floor/purple/side{dir = 10},/area/adosteel)
 "mQ" = (/turf/unsimulated/wall/auto,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 1; name = "exterior window"},/area/adosteel/hallway)
 "mS" = (/obj/decal/cleanable/rust,/turf/unsimulated/floor/grime,/area/adosteel/lobby)
 "mU" = (/obj/machinery/sleeper{dir = 8},/turf/unsimulated/floor/blue,/area/adosteel)
@@ -343,17 +342,18 @@
 "nk" = (/obj/machinery/chem_master{dir = 8},/turf/unsimulated/floor/caution/corner/nw,/area/adosteel)
 "nm" = (/obj/stool/bed,/obj/item/clothing/suit/bedsheet,/turf/unsimulated/floor/blue,/area/adosteel)
 "nn" = (/obj/machinery/door/airlock/pyro/glass{dir = 4; name = "Cantina"},/obj/machinery/door/firedoor/pyro{dir = 8},/turf/unsimulated/floor/delivery,/area/adosteel/cantina)
-"nt" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/purple/side{dir = 4},/area/adosteel)
 "nE" = (/obj/stool/bar,/obj/stool/bar,/turf/unsimulated/floor/wood/two,/area/adosteel/cantina/bar)
 "nI" = (/obj/decal/fakeobjects{anchored = 1; desc = "A security camera that is not on but, instead, off."; dir = 4; icon = 'icons/obj/monitors.dmi'; icon_state = "camerax"; name = "security camera"},/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/turf/unsimulated/floor/grime,/area/adosteel/hallway/west)
 "nM" = (/obj/machinery/chem_master{dir = 8},/turf/unsimulated/floor/carpet{dir = 4; icon_state = "red2"},/area/adosteel/cantina/bar)
 "nW" = (/turf/simulated/floor/carpet{icon_state = "fblue1"; dir = 2},/area/adosteel)
 "oh" = (/turf/simulated/floor/carpet{dir = 9; icon_state = "fblue2"},/area/adosteel)
 "oj" = (/turf/unsimulated/floor/plating,/area/adosteel)
+"ok" = (/obj/machinery/door/airlock/pyro/medical{dir = 2; icon_state = "research_closed"; name = "Research Storage"; req_access_txt = "24"},/obj/machinery/door/firedoor/pyro{dir = 2},/turf/unsimulated/floor/delivery,/area/adosteel)
 "ol" = (/obj/shrub/dead{dir = 1; name = "Dead plant"; pixel_y = 5},/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/male)
 "om" = (/turf/unsimulated/floor/carpet{dir = 4; icon_state = "fpurple3"},/area/adosteel)
 "or" = (/obj/machinery/light{dir = 2; icon_state = "tube1"},/turf/unsimulated/floor/blue/checker,/area/adosteel)
 "ow" = (/turf/unsimulated/wall/auto,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 4; name = "exterior window"},/area/adosteel/hallway)
+"oB" = (/obj/machinery/optable,/turf/unsimulated/floor/plating,/area/adosteel)
 "oC" = (/obj/machinery/door/airlock/pyro/glass{dir = 8; name = "Garden"; req_access_txt = "35"},/obj/cable{icon_state = "4-8"},/turf/unsimulated/floor/concrete,/area/adosteel)
 "oD" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/bluewhite{dir = 5},/area/adosteel)
 "oH" = (/obj/machinery/door/window/southright,/turf/unsimulated/floor/black/grime,/area/adosteel/lobby)
@@ -369,6 +369,7 @@
 "pg" = (/obj/decal/fakeobjects/pipe{dir = 8; icon = 'icons/obj/atmospherics/pipes.dmi'; icon_state = "vent"; name = "rusted vent"},/obj/machinery/vending/book,/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
 "ph" = (/turf/unsimulated/floor/bluewhite/corner{dir = 8},/area/adosteel)
 "pi" = (/turf/simulated/floor/stairs/wide/middle{dir = 8},/area/adosteel)
+"pl" = (/obj/item/paper{desc = null; icon_state = "paper_caution_bloody"; info = "please please understand i didnt mean to do it when i dont move for too long it begins to gake over again i need to KEEP MOVING OR ELSE IT WILL TAKE OVER PLEASE FORGIVE ME FOR WHAT I'VE DONE"; name = "bloodied note"; pixel_x = -5; pixel_y = 3},/obj/decal/cleanable/blood/drip/med,/obj/item/parts/human_parts/arm/right{pixel_x = 16; pixel_y = -3},/turf/unsimulated/floor/plating,/area/adosteel)
 "pm" = (/obj/machinery/vending/cola/red,/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
 "pq" = (/obj/machinery/atmospherics/pipe/manifold{dir = 1; icon_state = "manifold"; level = 2},/obj/machinery/meter,/turf/unsimulated/floor/bluewhite{dir = 4},/area/adosteel)
 "pt" = (/obj/stool/chair/blue{icon_state = "chair-b"; dir = 8},/obj/disposalpipe/segment,/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
@@ -377,6 +378,7 @@
 "pD" = (/obj/table/auto{desc = "A grimy and dusty counter that prizes were handed out over."; name = "prize counter"},/obj/machinery/cashreg{pixel_x = -4; pixel_y = 7},/turf/unsimulated/floor/carpet/arcade,/area/adosteel/arcade)
 "pE" = (/obj/window/cubicle{dir = 4},/turf/unsimulated/floor/blue,/area/adosteel)
 "pF" = (/obj/table/reinforced/auto,/turf/unsimulated/floor/black/grime,/area/adosteel/lobby)
+"pI" = (/obj/machinery/door/airlock/pyro/medical{dir = 2; icon_state = "research_closed"; name = "Chemistry"; req_access_txt = "24"},/obj/machinery/door/firedoor/pyro{dir = 2},/turf/unsimulated/floor/delivery,/area/adosteel)
 "pL" = (/obj/machinery/vending/coffee,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
 "pM" = (/obj/table/glass/frame,/obj/item/raw_material/shard/glass{pixel_x = -6; pixel_y = 6},/obj/item/raw_material/shard/glass{pixel_x = 7; pixel_y = -5},/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
 "pN" = (/obj/machinery/power/apc{dir = 1; name = "N APC"; noalerts = 1; pixel_y = 24; start_charge = 10},/obj/cable{icon_state = "0-4"; d2 = 4},/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/male)
@@ -402,6 +404,7 @@
 "rz" = (/obj/machinery/door/airlock/pyro{dir = 4; icon_state = "generic_closed"; name = "Fitness Center"},/turf/unsimulated/floor/delivery,/area/adosteel/hallway)
 "rD" = (/obj/cable{icon_state = "2-8"; d1 = 2; d2 = 8},/turf/unsimulated/floor/carpet{dir = 1; icon_state = "fred3"},/area/adosteel/cantina/bar)
 "rG" = (/obj/table/wood/round,/obj/machinery/light/lamp{icon_state = "lamp-burned"},/obj/decal/cleanable/paper,/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/male)
+"rJ" = (/obj/machinery/door/airlock/pyro/glass{dir = 4; name = "Research Sector"; req_access_txt = "24"},/obj/machinery/door/firedoor/pyro{density = 1; dir = 4; icon_state = "fdoor1"; opacity = 1},/turf/unsimulated/floor/delivery,/area/adosteel)
 "rL" = (/obj/cable{icon_state = "4-8"; d1 = 4; d2 = 8},/obj/machinery/door/airlock/pyro{dir = 4; icon_state = "generic_closed"; name = "Lobby"},/obj/machinery/door/firedoor/pyro{dir = 8},/turf/unsimulated/floor/delivery,/area/adosteel/hallway/west)
 "rM" = (/obj/machinery/light{icon_state = "tube1"; dir = 1},/obj/cable{icon_state = "2-8"; d1 = 2; d2 = 8},/turf/simulated/floor/specialroom/freezer,/area/adosteel/showers/male)
 "rN" = (/obj/decal/cleanable/cobweb2,/turf/unsimulated/floor/black/grime,/area/adosteel/lobby)
@@ -413,6 +416,7 @@
 "sl" = (/turf/unsimulated/grasstodirt{dir = 6},/area/adosteel)
 "sm" = (/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
 "sn" = (/obj/table/glass/auto,/obj/item/paper/book/materials,/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
+"sC" = (/obj/decal/cleanable/blood/gibs/body,/turf/unsimulated/floor/plating,/area/adosteel)
 "sF" = (/turf/unsimulated/floor/plating,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 10; name = "exterior window"},/area/adosteel/hallway/west)
 "sK" = (/turf/unsimulated/floor/delivery,/area/adosteel)
 "sL" = (/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 1; name = "exterior window"},/turf/unsimulated/floor/plating,/area)
@@ -422,6 +426,7 @@
 "tb" = (/turf/unsimulated/floor/purple,/area/adosteel)
 "tc" = (/turf/unsimulated/grasstodirt{dir = 4},/area/adosteel)
 "td" = (/obj/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/female)
+"tf" = (/turf/unsimulated/floor/specialroom/arcade,/area/adosteel)
 "tg" = (/turf/unsimulated/floor/carpet{dir = 1; icon_state = "fpurple3"},/area/adosteel)
 "to" = (/obj/table/auto{desc = "A grimy and dusty counter that prizes were handed out over."; name = "prize counter"},/turf/unsimulated/floor/carpet/arcade,/area/adosteel/arcade)
 "tq" = (/obj/cable{icon_state = "4-8"},/turf/simulated/floor/grass,/area/adosteel)
@@ -455,12 +460,12 @@
 "vA" = (/obj/shrub/dead,/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
 "vC" = (/obj/stool/chair/office{dir = 2; icon_state = "office_chair"},/turf/unsimulated/floor/carpet{dir = 1; icon_state = "fpurple3"},/area/adosteel)
 "vG" = (/obj/table/reinforced/auto,/obj/machinery/computer3/generic/personal,/turf/unsimulated/floor/black/grime,/area/adosteel/lobby)
+"vI" = (/obj/decal/fakeobjects/lighttube_broken{dir = 8; icon_state = "tube-broken"},/turf/unsimulated/floor/plating,/area/adosteel)
 "vR" = (/obj/machinery/chem_master{dir = 4},/turf/unsimulated/floor/caution/corner/ne,/area/adosteel)
 "vS" = (/obj/machinery/light{icon_state = "tube1"; dir = 1},/obj/cable{icon_state = "2-4"},/turf/simulated/floor/specialroom/freezer,/area/adosteel/showers/female)
 "vV" = (/obj/table/auto,/obj/decal/fakeobjects/lighttube_broken{icon_state = "tube-broken"; dir = 1},/turf/simulated/floor/specialroom/cafeteria,/area/adosteel/cantina)
 "vY" = (/turf/unsimulated/floor/plating,/turf/unsimulated/floor/concrete{icon_state = "floor-darker"},/area/adosteel)
 "wg" = (/obj/stool/chair/blue{dir = 1},/obj/item/storage/wall/medical{pixel_x = 0; pixel_y = -30},/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
-"wh" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/bluewhite{dir = 8},/area/adosteel)
 "wl" = (/obj/table/reinforced/auto,/obj/item/paper/book/dwainedummies,/turf/unsimulated/floor/carpet{dir = 1; icon_state = "fpurple1"},/area/adosteel)
 "wm" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/purple,/area/adosteel)
 "wp" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/wood,/area/adosteel/hallway)
@@ -508,6 +513,7 @@
 "zi" = (/obj/machinery/chem_heater,/obj/item/zippo{pixel_x = 11; pixel_y = -7},/turf/unsimulated/floor/caution/east,/area/adosteel)
 "zk" = (/obj/decal/cleanable/ash,/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/turf/unsimulated/floor/grime,/area/adosteel/hallway/west)
 "zl" = (/obj/stool/bed,/obj/item/clothing/suit/bedsheet{bcolor = "blue"; icon_state = "bedsheet-blue"},/obj/machinery/light/small{dir = 8; icon_state = "bulb1"; pixel_x = 0},/obj/window/cubicle{dir = 1},/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/male)
+"zp" = (/obj/machinery/light_switch{name = "E light switch"; pixel_x = 24; pixel_y = 0},/turf/unsimulated/floor/plating,/area/adosteel)
 "zs" = (/obj/decal/fakeobjects/lighttube_broken{dir = 2; icon_state = "tube-broken"},/turf/simulated/floor/specialroom/cafeteria,/area/adosteel/cantina)
 "zv" = (/obj/machinery/door/airlock/pyro{dir = 2; icon_state = "generic_closed"; name = "Fitness Center"},/turf/unsimulated/floor/delivery,/area/adosteel/hallway)
 "zw" = (/obj/table/reinforced/bar/auto,/obj/item/plate{pixel_x = 2; pixel_y = 6},/obj/item/kitchen/utensil/spoon{pixel_x = -1; pixel_y = 6},/obj/machinery/door/firedoor/pyro,/turf/unsimulated/floor/carpet{dir = 2; icon_state = "red2"},/area/adosteel/cantina/bar)
@@ -521,7 +527,6 @@
 "zY" = (/obj/tree1{dir = 1},/turf/unsimulated/dirt,/area/adosteel)
 "zZ" = (/obj/securearea{desc = "A warning sign which reads 'Fire Hazard'"; icon_state = "fire"; layer = 2.5; name = "FIRE HAZARD"},/turf/unsimulated/wall/auto/reinforced,/area/adosteel)
 "Ae" = (/obj/cable{icon_state = "4-8"; d1 = 4; d2 = 8},/turf/unsimulated/floor/carpet/arcade,/area/adosteel/arcade)
-"Ag" = (/obj/machinery/light_switch{name = "E light switch"; pixel_x = 24; pixel_y = 0},/turf/unsimulated/floor/bluewhite{dir = 5},/area/adosteel)
 "Aj" = (/obj/machinery/plantpot{anchored = 1},/turf/simulated/floor/grass,/area/adosteel)
 "Al" = (/obj/reagent_dispensers/compostbin,/turf/simulated/floor/grass,/area/adosteel)
 "Aw" = (/obj/machinery/light_switch{name = "E light switch"; pixel_x = 24; pixel_y = 0},/turf/unsimulated/floor/bluewhite{dir = 4},/area/adosteel)
@@ -552,8 +557,8 @@
 "CO" = (/turf/simulated/floor/stairs/wide/other{dir = 4},/area/adosteel)
 "CP" = (/turf/unsimulated/floor/plating,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 5; name = "exterior window"},/area/adosteel)
 "CQ" = (/turf/simulated/floor/stairs/wide/middle{dir = 1},/area/adosteel)
+"CU" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/specialroom/arcade,/area/adosteel)
 "Dd" = (/obj/stool/chair/wooden{desc = "Its wood has been long worn away. You could almost worry about getting splinters from looking at it for too long."; dir = 8; name = "worn wooden chair"},/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/female)
-"Dn" = (/obj/decal/fakeobjects/lighttube_broken{dir = 8; icon_state = "tube-broken"},/turf/unsimulated/floor/bluewhite{dir = 10},/area/adosteel)
 "Dq" = (/obj/table/wood/round,/obj/item/plate{pixel_x = 0; pixel_y = 2},/obj/item/plate{pixel_x = 0; pixel_y = 4},/obj/item/plate{pixel_x = 0; pixel_y = 6},/obj/item/plate{pixel_x = 0; pixel_y = 8},/obj/item/plate{pixel_x = 0; pixel_y = 10},/obj/item/plate{pixel_x = 0; pixel_y = 12},/obj/item/plate{pixel_x = 0; pixel_y = 14},/obj/item/plate{pixel_x = 0; pixel_y = 16},/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
 "Dv" = (/obj/table/reinforced/auto,/turf/unsimulated/floor/carpet{dir = 1; icon_state = "fpurple1"},/area/adosteel)
 "DA" = (/obj/cable{icon_state = "2-4"; d1 = 2; d2 = 4},/turf/simulated/floor/grass,/area/adosteel)
@@ -594,6 +599,7 @@
 "Ge" = (/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/turf/unsimulated/floor/grime,/area/adosteel/hallway/west)
 "Gg" = (/obj/machinery/vending/alcohol,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/unsimulated/floor/carpet{dir = 6; icon_state = "red2"},/area/adosteel/cantina/bar)
 "Gn" = (/obj/machinery/shower{dir = 4},/obj/window/cubicle{dir = 2; icon_state = "cubicle"},/turf/simulated/floor/specialroom/freezer,/area/adosteel/showers/male)
+"Gp" = (/obj/decal/cleanable/blood/drip/high,/mob/living/critter/maneater,/turf/unsimulated/floor/plating,/area/adosteel)
 "Gv" = (/obj/machinery/light{icon_state = "tube1"; dir = 1},/turf/unsimulated/floor/grime,/area/adosteel/hallway/west)
 "Gy" = (/obj/stone{dir = 8; icon_state = "stone"},/turf/unsimulated/grasstodirt{dir = 5},/area/adosteel)
 "GA" = (/obj/machinery/door/airlock/pyro{dir = 4; icon_state = "generic_closed"; name = "Lobby"},/obj/machinery/door/firedoor/pyro{dir = 8},/turf/unsimulated/floor/delivery,/area/adosteel/hallway/west)
@@ -615,6 +621,7 @@
 "HP" = (/turf/unsimulated/floor/red,/area/adosteel/maintenance)
 "HU" = (/obj/stool/chair/couch/red,/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
 "HY" = (/turf/unsimulated/floor/yellow,/area/adosteel)
+"Ia" = (/obj/decal/cleanable/blood/tracks{dir = 4},/turf/unsimulated/floor/bluewhite{dir = 1},/area/adosteel)
 "Ic" = (/turf/unsimulated/floor/yellow,/area)
 "Ip" = (/obj/machinery/vending/cola/blue,/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
 "Ir" = (/obj/table/reinforced/auto,/obj/item/decoration/ashtray,/turf/unsimulated/floor/carpet{dir = 1; icon_state = "fpurple1"},/area/adosteel)
@@ -626,11 +633,11 @@
 "IP" = (/obj/table/auto{desc = "A grimy and dusty counter that prizes were handed out over."; name = "prize counter"},/obj/machinery/door/window/northleft,/obj/window/reinforced/west,/obj/item/reagent_containers/food/drinks/bottle/wine{name = "Aged Wine"; pixel_x = -1; pixel_y = 3},/turf/unsimulated/floor/carpet/arcade,/area/adosteel/arcade)
 "IU" = (/obj/decal/fakeobjects/lighttube_broken{dir = 4; icon_state = "tube-broken"},/turf/simulated/floor/carpet{dir = 4; icon_state = "fblue2"},/area/adosteel)
 "IX" = (/obj/table/reinforced/auto,/obj/machinery/door/window/eastright{dir = 2; name = "Pharmacy"; req_access_txt = "5"},/obj/machinery/door/firedoor/pyro{dir = 2},/turf/unsimulated/floor/caution/northsouth,/area/adosteel)
+"IZ" = (/obj/decal/cleanable/blood/tracks{dir = 5},/turf/unsimulated/floor/bluewhite{dir = 1},/area/adosteel)
 "Je" = (/obj/machinery/sleep_console{dir = 8},/turf/unsimulated/floor/bluewhite{dir = 9},/area/adosteel)
 "Jf" = (/turf/unsimulated/floor/bluewhite{dir = 6},/area/adosteel)
 "Jn" = (/obj/machinery/vending/medical,/turf/unsimulated/floor/blue,/area/adosteel)
 "Jo" = (/turf/unsimulated/floor/carpet{dir = 10; icon_state = "fred3"},/area/adosteel/cantina/bar)
-"Jv" = (/obj/storage/closet/biohazard,/turf/unsimulated/floor/purple,/area/adosteel)
 "Jx" = (/obj/machinery/vending/monkey,/turf/unsimulated/floor/purple,/area/adosteel)
 "JG" = (/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/turf/unsimulated/floor/concrete,/area/adosteel)
 "JH" = (/turf/simulated/floor/stairs/wide{dir = 8},/area/adosteel)
@@ -655,6 +662,7 @@
 "KZ" = (/turf/unsimulated/floor/plating,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 4; name = "exterior window"},/area/adosteel/hallway/west)
 "Lb" = (/obj/machinery/door/airlock/pyro{name = "Dormitory - Women"},/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/obj/machinery/door/firedoor/pyro{dir = 2},/turf/unsimulated/floor/grime,/area/adosteel/dorms/female)
 "Lc" = (/obj/storage/closet/wardrobe/blue,/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/male)
+"Lg" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/plating,/area/adosteel)
 "Lm" = (/turf/unsimulated/floor/purple/side{dir = 1},/area/adosteel)
 "Lo" = (/obj/machinery/atmospherics/unary/cryo_cell{dir = 2; pipe_direction = 8},/turf/unsimulated/floor/blue,/area/adosteel)
 "Lp" = (/obj/shrub/dead{dir = 8; name = "Dead plant"; pixel_y = 0},/obj/decal/fakeobjects/lighttube_broken{dir = 4; icon_state = "tube-broken"},/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
@@ -675,6 +683,7 @@
 "MI" = (/obj/machinery/light,/obj/table/auto{desc = "A grimy and dusty counter that prizes were handed out over."; name = "prize counter"},/obj/window/reinforced/west,/obj/item/dice/coin{pixel_x = -5; pixel_y = 6},/obj/item/dice/coin{pixel_x = 8; pixel_y = 8},/obj/item/dice/coin{pixel_x = 9; pixel_y = -3},/obj/item/dice/coin{pixel_x = 3; pixel_y = 2},/obj/item/dice/coin{pixel_x = -4; pixel_y = -6},/obj/item/dice/coin{pixel_x = -2; pixel_y = 0},/turf/unsimulated/floor/carpet/arcade,/area/adosteel/arcade)
 "MJ" = (/obj/rack,/obj/item/sponge{name = "loofah"},/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/specialroom/freezer,/area/adosteel/showers/male)
 "MK" = (/obj/submachine/seed_manipulator{dir = 8},/turf/simulated/floor/grass,/area/adosteel)
+"MM" = (/obj/storage/secure/closet/research/uniform,/turf/unsimulated/floor/purple/side{dir = 2},/area/adosteel)
 "MQ" = (/obj/decal/cleanable/paper,/obj/disposalpipe/segment,/obj/decal/fakeobjects/lighttube_broken{dir = 2; icon_state = "tube-broken"},/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
 "MR" = (/obj/table/round/auto,/obj/item/decoration/ashtray{pixel_x = -7; pixel_y = 8},/turf/simulated/floor/specialroom/bar,/area/adosteel/cantina)
 "Nf" = (/turf/unsimulated/grasstodirt{dir = 9},/area/adosteel)
@@ -704,6 +713,7 @@
 "Pd" = (/obj/machinery/light{dir = 8},/turf/unsimulated/floor/carpet/arcade,/area/adosteel/arcade)
 "Pf" = (/obj/submachine/chef_sink/chem_sink{dir = 4},/turf/simulated/floor/specialroom/freezer,/area/adosteel/showers/male)
 "Pi" = (/obj/tree1,/turf/unsimulated/floor/setpieces/swampgrass,/area/adosteel)
+"Pk" = (/obj/machinery/door/airlock/pyro/medical{dir = 8; name = "Operating Theatre"; req_access_txt = "5"},/obj/machinery/door/firedoor/pyro{dir = 8},/obj/machinery/door/firedoor/pyro{density = 1; dir = 8; icon_state = "fdoor1"; opacity = 1},/obj/decal/cleanable/blood/tracks{dir = 4},/turf/unsimulated/floor/delivery,/area/adosteel)
 "Pl" = (/obj/window/cubicle{dir = 8},/turf/unsimulated/floor/blue,/area/adosteel)
 "Pr" = (/turf/unsimulated/floor/bluewhite{dir = 8},/area/adosteel)
 "Ps" = (/obj/machinery/light{dir = 4},/turf/unsimulated/floor/carpet/arcade,/area/adosteel/arcade)
@@ -729,7 +739,6 @@
 "QO" = (/obj/decal/fakeobjects/lighttube_broken{dir = 4; icon_state = "tube-broken"},/turf/unsimulated/floor/grime,/area/adosteel/hallway/west)
 "QR" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
 "QT" = (/obj/stool/bed,/obj/item/clothing/suit/bedsheet{bcolor = "blue"; icon_state = "bedsheet-blue"},/obj/window/cubicle{dir = 1},/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/male)
-"Ra" = (/obj/decal/fakeobjects/lighttube_broken{icon_state = "tube-broken"; dir = 1},/turf/unsimulated/floor/bluewhite{dir = 1},/area/adosteel)
 "Rf" = (/obj/machinery/atmospherics/unary/cold_sink/freezer/cryo/west,/turf/unsimulated/floor/blue,/area/adosteel)
 "Rg" = (/obj/cable{icon_state = "4-8"; d1 = 4; d2 = 8},/obj/machinery/door/airlock/pyro/glass{dir = 4; name = "Cantina"},/obj/machinery/door/firedoor/pyro{dir = 8},/turf/unsimulated/floor/delivery,/area/adosteel/hallway/west)
 "Ri" = (/turf/unsimulated/floor/bluewhite{dir = 10},/area/adosteel)
@@ -746,6 +755,7 @@
 "Sc" = (/turf/unsimulated/dirt,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 6; name = "exterior window"},/area/adosteel)
 "Sg" = (/obj/submachine/chef_sink/chem_sink{dir = 8},/turf/simulated/floor/specialroom/freezer,/area/adosteel/showers/female)
 "Sp" = (/turf/unsimulated/floor/carpet/arcade,/area/adosteel/arcade)
+"Ss" = (/obj/decal/cleanable/blood/tracks{dir = 10},/turf/unsimulated/floor/plating,/area/adosteel)
 "St" = (/obj/item/storage/wall/fire{pixel_x = -25; pixel_y = 3},/turf/unsimulated/floor/carpet{dir = 8; icon_state = "red2"},/area/adosteel/cantina/bar)
 "Sv" = (/obj/machinery/chem_master{dir = 4; pixel_x = -4},/turf/unsimulated/floor/blue,/area/adosteel)
 "Sw" = (/obj/river{dir = 2; icon_state = "river"},/turf/unsimulated/wall/setpieces/rootwall{desc = "The foliage is too thick to see through here."; icon_state = "grass"; name = "deep brush"},/area/adosteel)
@@ -775,9 +785,9 @@
 "Uz" = (/obj/shrub/dead{dir = 4},/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/female)
 "UA" = (/obj/decal/alienflower{pixel_x = -5; pixel_y = -3},/turf/unsimulated/grass,/area/adosteel)
 "UB" = (/obj/decal/fakeobjects/firelock_broken,/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/turf/unsimulated/floor/grime,/area/adosteel/hallway/west)
-"UF" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/bluewhite{dir = 1},/area/adosteel)
 "UJ" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/carpet/arcade/blank,/area/adosteel/lounge)
 "UN" = (/obj/cable{icon_state = "4-8"; d1 = 4; d2 = 8},/turf/unsimulated/floor/grime,/area/adosteel/lobby)
+"UP" = (/obj/decal/cleanable/blood/tracks{dir = 8},/turf/unsimulated/floor/plating,/area/adosteel)
 "UW" = (/obj/machinery/light_switch{name = "S light switch"; pixel_y = -24},/turf/unsimulated/floor/blue/checker,/area/adosteel)
 "Vd" = (/obj/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/unsimulated/floor/grime,/area/adosteel/lobby)
 "Ve" = (/obj/stool/bench/green/auto,/turf/unsimulated/floor/concrete{dir = 1; icon_state = "stairs-darker"},/area/adosteel)
@@ -801,11 +811,14 @@
 "Ww" = (/obj/machinery/light_switch{name = "N light switch"; on = 0; pixel_y = 24},/turf/unsimulated/floor/bluewhite{dir = 1},/area/adosteel)
 "Wx" = (/obj/river{dir = 4},/turf/unsimulated/floor/setpieces/swampgrass,/area/adosteel)
 "WB" = (/obj/decal/poster/wallsign/medbay,/turf/unsimulated/wall/auto/reinforced,/area/adosteel)
+"WE" = (/obj/machinery/door/airlock/pyro/medical{dir = 2; icon_state = "research_closed"; name = "Research Sector"; req_access_txt = "24"},/obj/machinery/door/firedoor/pyro{dir = 2},/turf/unsimulated/floor/delivery,/area/adosteel)
 "WG" = (/obj/storage/secure/closet/command/medical_director,/turf/simulated/floor/carpet{dir = 6; icon_state = "fblue2"},/area/adosteel)
 "WM" = (/obj/decal/cleanable/dirt/variety,/turf/simulated/floor/specialroom/cafeteria,/area/adosteel/cantina)
 "WO" = (/turf/unsimulated/floor/blue/checker,/area/adosteel)
 "WS" = (/turf/simulated/floor/specialroom/medbay{dir = 2},/area/adosteel)
 "WT" = (/obj/decal/cleanable/paper,/obj/decal/cleanable/dirt/variety,/turf/simulated/floor/specialroom/cafeteria,/area/adosteel/cantina)
+"WW" = (/obj/decal/fakeobjects/lighttube_broken{icon_state = "tube-broken"; dir = 1},/obj/decal/cleanable/blood/splatter,/turf/unsimulated/floor/bluewhite{dir = 1},/area/adosteel)
+"WX" = (/obj/storage/closet/biohazard,/obj/item/reagent_containers/emergency_injector/spaceacillin,/turf/unsimulated/floor/purple,/area/adosteel)
 "WY" = (/obj/machinery/chem_dispenser,/turf/unsimulated/floor/carpet{dir = 1; icon_state = "red2"},/area/adosteel/cantina/bar)
 "Xc" = (/turf/unsimulated/dirt,/turf/unsimulated/wall/adaptive/bunker_window{desc = "A heavily reinforced window. Unusually reinforced in fact... Why would such a strong window be necessary?"; dir = 10; name = "exterior window"},/area/adosteel)
 "Xg" = (/obj/table/auto,/turf/unsimulated/floor/grime,/area/adosteel/hallway)
@@ -824,7 +837,6 @@
 "Yc" = (/obj/table/auto,/obj/item/reagent_containers/dropper/mechanical{pixel_x = -9; pixel_y = 3},/obj/item/reagent_containers/dropper/mechanical{pixel_x = -4; pixel_y = 3},/obj/item/clothing/glasses/spectro{pixel_x = 7; pixel_y = 10; step_x = 0; step_y = 0},/obj/item/clothing/glasses/spectro{pixel_x = 7; pixel_y = 4; step_x = 0; step_y = 0},/turf/simulated/floor/purple,/area/adosteel)
 "Yd" = (/obj/decal/cleanable/dirt/variety,/turf/unsimulated/floor/carpet{dir = 4; icon_state = "red2"},/area/adosteel/cantina/bar)
 "Yg" = (/turf/unsimulated/floor/carpet{icon_state = "purple2"},/area/adosteel)
-"Yh" = (/obj/machinery/door/airlock/pyro/glass{dir = 4; name = "Research Sector"; req_access_txt = "24"},/obj/machinery/door/firedoor/pyro{dir = 4},/turf/unsimulated/floor/delivery,/area/adosteel)
 "Yl" = (/obj/cable{icon_state = "4-8"},/turf/simulated/floor/stairs/wide/middle{dir = 4},/area/adosteel)
 "Yn" = (/obj/decal/alienflower{pixel_x = -11; pixel_y = -11},/turf/unsimulated/grass,/area/adosteel)
 "Yp" = (/obj/tree1{dir = 1},/turf/unsimulated/grasstodirt{dir = 9},/area/adosteel)
@@ -843,6 +855,7 @@
 "Zl" = (/obj/storage/secure/closet/medical/uniforms,/turf/unsimulated/floor/blue,/area/adosteel)
 "Zq" = (/obj/table/auto,/obj/item/storage/firstaid/oxygen{pixel_x = -6; pixel_y = 1},/obj/item/storage/firstaid/oxygen{pixel_x = 7; pixel_y = 1},/obj/item/storage/firstaid/oxygen{pixel_x = -6; pixel_y = 15},/obj/item/storage/firstaid/oxygen{pixel_x = 7; pixel_y = 15},/turf/unsimulated/floor/blue,/area/adosteel)
 "Zr" = (/turf/unsimulated/grasstodirt{dir = 1},/area/adosteel)
+"Zw" = (/obj/item/assembly/time_bomb{pixel_x = -5; pixel_y = 9},/obj/item/reagent_containers/glass/beaker/large{pixel_x = 4; pixel_y = -7},/obj/decal/cleanable/blood/drip/low,/obj/item/parts/human_parts/leg/right{pixel_x = -3; pixel_y = -8},/turf/unsimulated/floor/plating,/area/adosteel)
 "ZA" = (/obj/table/reinforced/auto,/obj/machinery/cashreg,/obj/machinery/door/window/eastright{dir = 2; icon_state = "leftspark"; name = "Pharmacy"; req_access_txt = "5"},/obj/machinery/door/firedoor/pyro{dir = 2},/turf/unsimulated/floor/caution/northsouth,/area/adosteel)
 "ZD" = (/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/obj/machinery/door/airlock/pyro{name = "Showers - Men"},/obj/machinery/door/firedoor/pyro{dir = 2},/turf/unsimulated/floor/delivery,/area/adosteel/showers/male)
 "ZI" = (/obj/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/unsimulated/floor/carpet/grime,/area/adosteel/dorms/male)
@@ -891,13 +904,13 @@ oUmEmEezmEmEmEtyBZBlBlBlyxtgJVvCyaBlBlBlBMsKBlfLBlBlBlBlBltbtymEmEmEmEmEmEojWeWe
 oUmEmEmEmEmEmEejBZBlfLBlqrGNwlIwomBlfLBlBMbxBlBlBlBlBlfLBltbtymEmEmEmEmEmEojWeWeWeojaaaaaaaaAVWeZhktAVaaaaaaaaaaaaaaaaaaaaYzLILIYzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEoU
 oUmEmEmEmEmEmEejBZBlBlBlqrDvIrFbomBlBlBlBMbxtbtbtbtbtbtbtbtbtymEmEmEmEmEmEojWeWeWeojaaaaaaaaAVWeZhktAVaaaaaaaaaaaaaaaaaaaaejJGZhejaaaaaaaaaaaaabaaaaaaaaaaaaaaacmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEoU
 oUmEmEmEmEmEmEejyDBlQrvaxxndYgndjlpZBlBlBMtyKpKpKpKpKpKpKptytymEmEmEmEmEmEojWeWeWeojaaaaaaaaAVWeZhktAVaaaaaaaaaaaaaaadaeafejJGZhejadaeaeaeaeaeaeaeaeaeaeafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
-oUMzmEmEmEmEmEejJvvaJvbxbxbxsKbxbxkVvafHYEtymEmEmEmEmEmEmEmEmEmEmEmEmEmEmEojWeWeWeojabaaaaaaAVWeZhktAVmEaaaaaaaaaaaaPSKpKpDCJGZhJZagagagagKpagagagagagagahafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
-oUmEmEmEmEmEmEtyTysKzZtytyLEQuLEbxbxWvsKbxtymEmEmEmEmEmEmEzYmEmEmEmEmEmEmEojWeWeWeojaaaaaaadaiWeZhktaiafaaaaaaaaaaaaejyAFVWeJGZhEvfWUtDAkegAblAlblAjAjNYakahafaaaaaaalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
-oUmEmEmEmEmEmEtyXBfyEEXKtyjyMAqXbxbxClLmrTtymEPSKpKpKpCPapmEmEmEsloWoWapmEojWeWeWeojaeaeafamanWeZhktakaoadaeaeaeaeafejFHEvWeJGTiWefWblIHblblblblblblblblAjakahafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
-oUmEmEmEzYmEmEtyJxkmjrCmtytytytytykJBZBlntTyKplqaqajajJZzezezezeararararzezevYvYasararararlqatJQCQiSQNmMagagagagagagDCWeWeKYJGZhEvfWblIHblblblblblblblblblAjakahafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
-oUmEmEmEmEmEmEtyvRkmQDmLCsPPRWnktykJyDBlBMYhWeWeWeWeWeExWeWeWeWeWeWeWeWeWeWeWeWeWeWeWeWeWeWejEZhZhJGEaWeWeWeWeWeEvWeWeWeWeWeJGZhWefWKvIHblblblblblblblblblbldSaiauaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
-oUmEmEmEmEmEmEtyXtTgzRzRzRuWdAgWtyYUkVBlBMYhZhZhZhZhZhZhZhZhZhZhZhZhTiZhbUZhZhZhZhZhZhZhZhZhpiZhWeLQYlHtHtHtHtHtHtHtHtHtHtHtJRHtHtoCtqjQblblErblblbldSxWblblMKaiauabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
-oUmEmEmEmEmEmEtyzikmMqYcgBbOaGUvtybxNTkVYEYhWeWeWeZhWeWeWeWeExWeWeWeWeWeWeWeWeWeWeWeExWeWeWeJHZhZhJGCOWeWeWeWeWeWeWeWeWeWeWeWeEvWefWsgblblblblblblblblblblblTDaiauaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
+oUMzmEmEmEmEmEejWXvaWXbxbxbxokbxbxmOMMfHYEtymEmEmEmEmEmEmEmEmEmEmEmEmEmEmEojWeWeWeojabaaaaaaAVWeZhktAVmEaaaaaaaaaaaaPSKpKpDCJGZhJZagagagagKpagagagagagagahafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
+oUmEmEmEmEmEmEtyTypIzZtytyLEQuLEbxbxWvWEbxtymEmEmEmEmEmEmEzYmEmEmEmEmEmEmEojWeWeWeojaaaaaaadaiWeZhktaiafaaaaaaaaaaaaejyAFVWeJGZhEvfWUtDAkegAblAlblAjAjNYakahafaaaaaaalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
+oUmEmEmEmEmEmEtyXBfyEEXKtyjyMAqXbxbxtftftftymEPSKpKpKpCPapmEmEmEsloWoWapmEojWeWeWeojaeaeafamanWeZhktakaoadaeaeaeaeafejFHEvWeJGTiWefWblIHblblblblblblblblAjakahafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
+oUmEmEmEzYmEmEtyJxkmjrCmtytytytytykJtftfCUTyKplqaqajajJZzezezezeararararzezevYvYasararararlqatJQCQiSQNmMagagagagagagDCWeWeKYJGZhEvfWblIHblblblblblblblblblAjakahafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
+oUmEmEmEmEmEmEtyvRkmQDmLCsPPRWnktykJCUtftfrJWeWeWeWeWeExWeWeWeWeWeWeWeWeWeWeWeWeWeWeWeWeWeWejEZhZhJGEaWeWeWeWeWeEvWeWeWeWeWeJGZhWefWKvIHblblblblblblblblblbldSaiauaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
+oUmEmEmEmEmEmEtyXtTgzRzRzRuWdAgWtyYUtftftfrJZhZhZhZhZhZhZhZhZhZhZhZhTiZhbUZhZhZhZhZhZhZhZhZhpiZhWeLQYlHtHtHtHtHtHtHtHtHtHtHtJRHtHtoCtqjQblblErblblbldSxWblblMKaiauabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
+oUmEmEmEmEmEmEtyzikmMqYcgBbOaGUvtybxNTtfCUrJWeWeWeZhWeWeWeWeExWeWeWeWeWeWeWeWeWeWeWeExWeWeWeJHZhZhJGCOWeWeWeWeWeWeWeWeWeWeWeWeEvWefWsgblblblblblblblblblblblTDaiauaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
 oUmEmEmEmEmEmEtydlKqbMbMbMbMpwHjtybxbxbxtyTyKpCPJQCQazPSKpKpKpKpagagagagagagagKpKpKpKpKpKpcSavWeZhktaxwTagagagKpPSKpKpKpKpKpKpKpKpCPblblblblblblblblblblblAjayaAaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
 oUmEmEmEmEmEmEtypuCMputytytytytytybxbxbxtymEslaiWeZhWeejaaaaaaaaaCaDaDaDaDaDaBaaaaaaaEaaaaXcoQWeZhktNhScaCaDaBadaisloWoWoWoWoWoWapgYblblblblblblblblblblAjayaAaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
 oUmEmEmEMzmEmEtyJJfqJJJJLomlOQLoTxohWoEltymEtcaiWeZhEvaiafaaaaaaaEaaalaaaaaaaaaaaaaaaaaaaaadaiWeTiktaiafaaaaaaaFaitcYnRpRpRpRpRpdqgYXqblblblblblblAjAjAjayaAaBaaaaaaaaalaaaaaaaaaaaaaaaaaaaaaaaaaaaamEoU
@@ -922,11 +935,11 @@ oUmEmEmEmEtcRptyVrPrzRzRAwcdaUaUWOWOWOxJZhZhZhZhZhZhZhIGvlKMvlvlxRvlvlvlwCdZaSRg
 oUmEmEMzmEtcRptyZlPruWzRphlTWOWOwuWOWOxJZhTiZhZhZhZhZhnnvlvlmxvlsmwsFxvlwCmxvlvfGeCIZjzlMyMyLcVHyVNqNqFNYubjbkbmbmbmbmbmbmbmbmbnbmbpyPHCHCHCHCHChLHCHCyPaMaMaMaMaMaMaMauaaaaaaaaaaalaaaabqaaaFaMaMaMaMaM
 oUmEmEmEmEtcRptyzSPrXAGSGSlTUWorODODODWBaWaWaWahVeVeVerydveXynrOsmdvCkPNptvlvAZjGeCIZjRzMyMyqdVHuEPaNqjWYubjbmbsbsbtbtbvbybsbsbzbmbpyPHCHCHCHCHChLHCHCyPaMaMaMaMaMaMaMaubAaaaaadaeafaaaaaaaaaFaMaMaMaMaM
 oUmEmEmEmEtctytycdFRFRcdcdcdcdcdcdcdcdtyRpRpRpakagagageWlPmhmurOsmdvgFlxptvleoZjGeCIZjQTVoSKrGVHRuDdbojWYubjbmbtbvbvbBbCbDbvcZbsbmbpyPHCHCHCHCHChLHCHCyPaDaDaDaDaDaDaDaBaaaaaaaFbHauaaaaaaaaaFaMaMaMaMaM
-oUmEmEmEmEtctypRgLAPphWwRaUFfqmdfqfqAgtytytyZrZrZrZrZreWvlwgyWQjxyvlyWyWMQvlDqZjUBQzZjRIRIRIRIVHVHVHVHVHYubjbmbybJbKbLbvbNbPcMbtbmbpyPhLhLhLhLhLhLHCHCueaeaeaebRaeaeaeaeafaaaaaCaDaBbSaeafaaaFaMaMaMaMaM
-oUmEmEmEmEtctywMPruWzRzRXAGSeUcdDnYyphoDVntyapmEslapmEeWryryryrywyVOVOFXlnryryZjhjCIoPBdRQBdhKifPQFYBdLGrizLbWTcbDbDbZcacbccceyJbWcicjEsckclEsEsEsHCHCbIbHbHbHbHbHbHbHbHauadaecmaaaaaFbHauaaaFaMaMaMaMaM
-oUmEmEmEmEtctydakAzRzRzRPFVZtytytywhzRPFeGtydqmEGyNfmEeWcovVcqcqcrcscscslnryryZjzkCICIBdRQBdBdBdNuPLLGBdribWbWiAcccvcacwcabvcvyJbWcicjEsEsclEsEsEsQvHCwXbHbHbHbHbHbHbHbHauaFcxauaaaaaFcyauaaaFaMaMaMaMaM
-oUmEmEmEmEtctyjURiGSGSGSyjpUtyRptyPrgUPFmNtydqmEmEmEmEeWczcAcscscrcsWMcCkUmImImIuciCmImImIZjZjZjZjZjZjZjFhbjbmbvcDbvbZcabZbvbDbscFbpyPhLhLhLhLhLhLHCHCueaDaDaDaDaDcGaDaDaBaCaDaBaaaaaFbHauaaaFaMaMaMaMaM
-oUmEmEmEeztctyZqpEnmnanmPlJJtyRptyRiGSyjcgtyoVmEmEmEmEeWcHWMcscscrcAcsJUmIbiCLCLXMtWtWtWIpuDSpqwSpSpqwDOtvbjbmbycKcLbvbvbCcecMbtbmbpyPcNcOcPcOcNhLHCHCyPaeaeaeaeaeaeaeaeafaaaaadaeaeaCcRaBaaaFaMaMaMaMaM
+oUmEmEmEmEtctypRgLAPphWwWWfpIaPkIaIZzptytytyZrZrZrZrZreWvlwgyWQjxyvlyWyWMQvlDqZjUBQzZjRIRIRIRIVHVHVHVHVHYubjbmbybJbKbLbvbNbPcMbtbmbpyPhLhLhLhLhLhLHCHCueaeaeaebRaeaeaeaeafaaaaaCaDaBbSaeafaaaFaMaMaMaMaM
+oUmEmEmEmEtctywMPruWzRzRXAGSeUcdvISsUPLgVntyapmEslapmEeWryryryrywyVOVOFXlnryryZjhjCIoPBdRQBdhKifPQFYBdLGrizLbWTcbDbDbZcacbccceyJbWcicjEsckclEsEsEsHCHCbIbHbHbHbHbHbHbHbHauadaecmaaaaaFbHauaaaFaMaMaMaMaM
+oUmEmEmEmEtctydakAzRzRzRPFVZtytytyLgZwGpeGtydqmEGyNfmEeWcovVcqcqcrcscscslnryryZjzkCICIBdRQBdBdBdNuPLLGBdribWbWiAcccvcacwcabvcvyJbWcicjEsEsclEsEsEsQvHCwXbHbHbHbHbHbHbHbHauaFcxauaaaaaFcyauaaaFaMaMaMaMaM
+oUmEmEmEmEtctyjURiGSGSGSyjpUtyRptysCoBplmNtydqmEmEmEmEeWczcAcscscrcsWMcCkUmImImIuciCmImImIZjZjZjZjZjZjZjFhbjbmbvcDbvbZcabZbvbDbscFbpyPhLhLhLhLhLhLHCHCueaDaDaDaDaDcGaDaDaBaCaDaBaaaaaFbHauaaaFaMaMaMaMaM
+oUmEmEmEeztctyZqpEnmnanmPlJJtyRptyRiGSLgcgtyoVmEmEmEmEeWcHWMcscscrcAcsJUmIbiCLCLXMtWtWtWIpuDSpqwSpSpqwDOtvbjbmbycKcLbvbvbCcecMbtbmbpyPcNcOcPcOcNhLHCHCyPaeaeaeaeaeaeaeaeafaaaaadaeaeaCcRaBaaaFaMaMaMaMaM
 oUmEmEmEmEtctytytyKpKpKptytytyRptytytytytytydqmEmEmEmEeWcTcscVcWcXcscscsmItrHUXrXMVWUJtWpLuDSpSpSpSpSpFQtvbjbmbycYcZbvbDdcbvdddebmbpyPcOdfdfdfcOhLHCQvyPaMaMaMaMaMaMaMaMauaaaaaFdgbHauaaaaaaaFaMaMaMaMaM
 oUmEmEmEmExtZrZrZrZrZrZrZrZrZrZrZrZrZrZrZrZrNfmEmEmEmEeWdhcsdidjdkcsWTdnmIsnNMpMXMtWtWVWXsuDSpXkSpSpSpSptvbjbmbsbsbtbybybybtdobsbmbpyPdpdfdfdfdrhLHCHCyPaMaMaMaMaMaMaMaMauaaaadsaDaDaBaaaaaaaFaMaMaMaMaM
 oUmEmEmEmEzYmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEmEeWdtcscscscrcscsdumItWYDtWFKAHAHAHAHVqAeAeAeAeAeGHtvbjbmdybmbmbmdzbmbmbmbmbmbpyPcOdfdfdfcOhLHCHCyPaMaMaMaMaMaMaMaMauaaaaaaaaaaaaaaaaaaaFaMaMaMaMaM
