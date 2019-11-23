@@ -2485,12 +2485,19 @@
 	icon_state = "yellow"
 	permarads = 1
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+///////////////////////////////
+=======
+>>>>>>> Stashed changes
 /////////////////////////////// Adosteel
 
 /area/adosteel
 	name = "Adosteel"
 	icon_state = "green"
 	filler_turf = "/turf/unsimulated/dirt"
+<<<<<<< Updated upstream
 
 /area/adosteel/lobby
 	name = "Adosteel Lobby"
@@ -2553,12 +2560,85 @@
 	icon_state = "yellow"
 
 /area/adosteel/maintenance/furnace
+=======
+	skip_sims = 1
+	sims_score = 0
+
+
+/area/adosteel/indoor/
+	name = "Adosteel Indoors"
+	icon_state = "blue"	
+	sound_environment = 21
+	sound_group = "adosteel_indoor"
+	var/sound_loop = 'sound/ambience/adosteelindoorambi.ogg'
+	var/sound_loop_vol = 80		
+
+/area/adosteel/indoor/lobby
+	name = "Adosteel Lobby"
+	icon_state = "blue"
+
+/area/adosteel/indoor/hallway
+	name = "Adosteel Hallway"
+	icon_state = "blue"
+	sound_environment = 12		// "hallway" huh?
+
+/area/adosteel/indoor/hallway/west
+	name = "Adosteel Western Hallway"
+	icon_state = "blue"
+
+/area/adosteel/indoor/lounge
+	name = "Adosteel Lounge"
+	icon_state = "blue"
+
+/area/adosteel/indoor/arcade
+	name = "Adosteel Arcade"
+	icon_state = "blue"
+
+/area/adosteel/indoor/cantina
+	name = "Adosteel Cantina"
+	icon_state = "blue"
+
+/area/adosteel/indoor/cantina/bar
+	name = "Adosteel Cantina Bar"
+	icon_state = "blue"
+
+/area/adosteel/indoor/showers
+	name = "Adosteel Showers"
+	icon_state = "blue"
+
+/area/adosteel/indoor/showers/male
+	name = "Adosteel Men's Showers"
+	icon_state = "blue"
+
+/area/adosteel/indoor/showers/female
+	name = "Adosteel Women's Showers"
+	icon_state = "purple"
+
+/area/adosteel/indoor/dorms
+	name = "Adosteel Dormitory"
+	icon_state = "purple"
+
+/area/adosteel/indoor/dorms/male
+	name = "Adosteel Men's Dormitory"
+	icon_state = "blue"
+
+/area/adosteel/indoor/dorms/female
+	name = "Adosteel Women's Dormitory"
+	icon_state = "purple"
+
+/area/adosteel/indoor/maintenance
+	name = "Adosteel Maintenance"
+	icon_state = "yellow"
+
+/area/adosteel/indoor/maintenance/furnace
+>>>>>>> Stashed changes
 	name = "Adosteel Furnace Room"
 	icon_state = "yellow"
 
 /area/adosteel/outdoors
 	name = "Adosteel Swamps"
 	icon_state = "green"
+<<<<<<< Updated upstream
 
 	// copypasta of crypt rain code because idk what I'm doing pls no bully
 
@@ -2569,12 +2649,19 @@
 	
 	skip_sims = 1
 	sims_score = 0
+=======
+	sound_environment = 15		// "forest" is close enough to a swamp I guess
+>>>>>>> Stashed changes
 
 /area/adosteel/outdoors/teleporter
 	name = "Adosteel Teleport Center"
 	icon_state = "green"
 	
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
 /*
 /area/derelict
