@@ -109,3 +109,16 @@
 	/obj/item/parts/human_parts/leg,
 	/obj/item/raw_material/cotton)
 	itemstring = "items of produce"
+
+/obj/item/satchel/hydro/small
+	name = "small produce bag"
+	desc = "It's so small! It holds 0/20 items of produce."
+	maxitems = 20
+	icon_state = "hydrosatchel_smol"
+
+/obj/item/satchel/hydro/large
+	name = "large produce satchel"
+	desc = "Your entire harvest crammed into one bag! It holds 0/100 items of produce."
+	maxitems = 100
+	icon_state = "hydrosatchel_big"
+	w_class = 2			// It's a BEEG bag after all!
