@@ -858,7 +858,7 @@ datum
 			mix_sound = 'sound/effects/blobattack.ogg'
 
 		cocktail_pinacolada
-			name = "PiÃ±a Colada"
+			name = "Piña Colada"
 			id = "pinacolada"
 			result = "pinacolada"
 			required_reagents = list("juice_pineapple" = 1, "rum" = 1, "coconut_milk" = 1)

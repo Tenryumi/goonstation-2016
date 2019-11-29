@@ -1242,7 +1242,7 @@ datum
 			reagent_state = LIQUID
 
 		fooddrink/alcoholic/pinacolada
-			name = "Pi�a Colada"
+			name = "Piña Colada"
 			id = "pinacolada"
 			fluid_r = 255
 			fluid_g = 255
