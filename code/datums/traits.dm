@@ -537,6 +537,14 @@
 	points = 2
 	isPositive = 0
 
+/obj/trait/nerd_voice
+	name = "Nerd voice (-2)"
+	cleanName = "Nerd Voice"
+	desc = "Your voice is distinctly nerdy (ridiculous tie not included.) Also works for females."
+	id = "nerd_voice"
+	points = -2
+	isPositive = 0
+
 /obj/trait/leftfeet
 	name = "Two left feet (+1)"
 	cleanName = "Two left feet"

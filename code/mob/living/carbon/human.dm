@@ -3677,6 +3677,11 @@
 					boutput(src, "<span style=\"color:red\">The starlight burns you!</span>")
 				src.TakeDamage("chest", 0, 2, 0, DAMAGE_BURN)
 
+		// Replace our scream noises with scientist screams if we took the appropriate trait.
+		if (src.traitHolder.hasTrait("nerd_voice"))
+			sound_list_scream = list('sound/voice/nerd_scream_1.ogg', 'sound/voice/nerd_scream_2.ogg', 'sound/voice/nerd_scream_3.ogg', 'sound/voice/nerd_scream_4.ogg', 'sound/voice/nerd_scream_5.ogg')
+
+		
 		if (src.loc && isarea(src.loc.loc))
 			if (src.loc.loc:irradiated)
 				if (src.wear_suit && src.wear_suit:radproof)
