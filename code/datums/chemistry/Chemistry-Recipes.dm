@@ -545,7 +545,7 @@ datum
 			drinkrecipe = 1
 
 		cocktail_beepskybeer
-			name = "Beepskybr√§u Security Schwarzbier"
+			name = "Beepskybr‰u Security Schwarzbier"
 			id = "beepskybeer"
 			result = "beepskybeer"
 			required_reagents = list("beer" = 1, "nanites" = 1)
@@ -912,7 +912,7 @@ datum
 			required_reagents = list("negroni" = 2, "ectoplasm" = 1)
 			result_amount = 3
 		
-		cocktail_honktonc
+		cocktail_honky_tonic
 			name = "Honky Tonic"
 			id = "honky_tonic"
 			result = "honky_tonic"

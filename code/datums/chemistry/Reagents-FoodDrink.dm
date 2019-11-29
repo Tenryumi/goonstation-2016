@@ -262,8 +262,8 @@ datum
 			taste = "spooky"
 
 		fooddrink/alcoholic/beepskybeer
-			name = "Beepskybr�u Security Schwarzbier"
-			name = "Beepskybr�u Security Schwarzbier"
+			name = "Beepskybräu Security Schwarzbier"
+			name = "Beepskybräu Security Schwarzbier"
 			id = "beepskybeer"
 			description = "A dark German beer, typically served with dark bread, cream cheese, and an intense appreciation for the law."
 			reagent_state = LIQUID
@@ -1032,6 +1032,7 @@ datum
 
 			// Occasionally weakens and stuns the mob. Sometimes they honk. More rarely, they might even randomly say something stupid against their will.
 			on_mob_life(var/mob/M)
+				..(M)
 				if(!M) M = holder.my_atom
 				src = null
 				if(prob(10))
@@ -1095,6 +1096,10 @@ datum
 						"man made of meat.",\
 						"bowl of word soup.",\
 						"bee.",\
+						"greytider.",\
+						"buttbot.",\
+						"existential nightmare.",\
+						"key to worldwide destruction...",\
 						"novel without a proper ending.",\
 						"space station!",\
 						"monkey.",\
@@ -1126,7 +1131,6 @@ datum
 							" I still haven't gotten over that.")
 					message = messageStart + messageAdjective + messageNoun + messageEnd
 					M.say(message)
-				..(M)
 				return
 
 		fooddrink/alcoholic/maitai
