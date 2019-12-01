@@ -608,7 +608,7 @@ datum
 			name = "Space-Cuba Libre"
 			id = "libre"
 			result = "libre"
-			required_reagents = list("cola" = 1, "rum" = 1, "juice_lime" = 1)
+			required_reagents = list("rcola" = 2, "juice_lime" = 1)
 			result_amount = 3
 			mix_phrase = "You shed a single patriotic tear as the drink comes together."
 			mix_sound = 'sound/misc/drinkfizz.ogg'
