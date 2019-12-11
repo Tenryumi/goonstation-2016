@@ -143,6 +143,10 @@
 	var/working = 0
 
 	attackby(obj/item/W as obj, mob/user as mob)
+		//in case a non-borg user somehow gets their hands on this thing, god forbid
+		if (!istype(user, /mob/living/silicon/robot/))
+			boutput(user, "This device is only compatible with mechanical users.")
+			return
 		if (!istype(W,/obj/item/reagent_containers/glass/)) return
 		var/obj/item/reagent_containers/glass/B = W
 
