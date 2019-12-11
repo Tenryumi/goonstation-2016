@@ -7,6 +7,12 @@ obj/machinery/recharger
 	desc = "An anchored minature recharging device, used to recharge small, hand-held objects that don't require much electrical charge."
 	power_usage = 50
 
+	// So we can have rechargers with different sprites, let's use their icon states as variables!
+	// This way we won't have to make a new proc altogether just so we can have different sprites
+	var/sprite_empty = "recharger0"
+	var/sprite_charging = "recharger1"
+	var/sprite_complete = "recharger2"
+
 	var
 		obj/item/gun/energy/charging = null
 		obj/item/baton/charging2 = null
@@ -82,39 +88,85 @@ obj/machinery/recharger
 		power_usage = 50
 	..()
 	if(stat & NOPOWER)
-		src.icon_state = "recharger0"
+		src.icon_state = sprite_empty
 		return
 
 	if((src.charging) && ! (stat & NOPOWER) )
 		if (src.charging.cell)
 			if(src.charging.cell.charge(20))
-				src.icon_state = "recharger1"
+				src.icon_state = sprite_charging
 				use_power(600)
 			else
-				src.icon_state = "recharger2"
+				src.icon_state = sprite_complete
 
 	else if ((src.charging2) && ! (stat & NOPOWER) )
 		if (src.charging2.cell)
 			if(src.charging2.cell.charge(15))
-				src.icon_state = "recharger1"
+				src.icon_state = sprite_charging
 				use_power(500)
 			else
-				src.icon_state = "recharger2"
+				src.icon_state = sprite_complete
 
 	else if ((src.charging3) && ! (stat & NOPOWER) )
 		if (src.charging3.charges < src.charging3.maximum_charges)
 			src.charging3.charges++
-			src.icon_state = "recharger1"
+			src.icon_state = sprite_charging
 			use_power(250)
 		else
-			src.icon_state = "recharger2"
+			src.icon_state = sprite_complete
 
 	else if ((src.charging4) && ! (stat & NOPOWER) )
 		if(src.charging4.charge(15))
-			src.icon_state = "recharger1"
+			src.icon_state = sprite_charging
 			use_power(500)
 		else
-			src.icon_state = "recharger2"
+			src.icon_state = sprite_complete
 
 	else if (!(src.charging || src.charging2 || src.charging3 || src.charging4))
-		src.icon_state = "recharger0"
+		src.icon_state = sprite_empty
+
+
+obj/machinery/recharger/wall
+	icon_state = "wall_recharger0"
+	name = "wall mounted recharger"
+	desc = "A recharger, refitted to be mounted onto a wall. Handy!"
+	sprite_empty = "wall_recharger0"
+	sprite_charging = "wall_recharger1"
+	sprite_complete = "wall_recharger2"
+
+/**
+This is a handy dandy little placer for the wall rechargers, so you don't have to move the things pixel by pixel
+every time you want to place a charger on a wall somewhere.
+
+Just place this in a map, point it in a direction, and it will automagically create a wall recharger that
+appropriately attaches to the wall! Wow!
+*/
+obj/recharger_placer
+	name = "wall mounted recharger placer"
+	desc = "You are not supposed to be seeing this! The secrets of creation have been unravelled to you, oh god OH FUCK IMCODER"
+	icon = 'icons/obj/stationobjs.dmi'
+	icon_state = "wall_recharger_placer"
+
+	New()
+		..()
+		var/obj/machinery/recharger/wall/C = new/obj/machinery/recharger/wall
+
+		C.loc = src.loc
+
+		switch(dir)
+			if(1)
+				C.pixel_x = -1
+				C.pixel_y = -18
+			if(2)
+				C.pixel_x = 1
+				C.pixel_y = 18
+			if(4)
+				C.pixel_x = 18
+				C.pixel_y = 1
+			if(8)
+				C.pixel_x = -18
+				C.pixel_y = -1
+		
+		qdel(src)
+			
+				
