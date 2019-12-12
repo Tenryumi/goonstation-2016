@@ -173,7 +173,7 @@ var/list/datum/bioEffect/bioEffectList = list()
 		E.holder = src
 		E.activated_from_pool = 1
 		E.OnAdd()
-		if(lentext(E.msgGain) > 0)
+		if(length(E.msgGain) > 0)
 			if (E.isBad)
 				boutput(owner, "<span style=\"color:red\">[E.msgGain]</span>")
 			else
@@ -403,7 +403,7 @@ var/list/datum/bioEffect/bioEffectList = list()
 			newEffect.OnAdd()
 			src.genetic_stability -= newEffect.stability_loss
 			src.genetic_stability = max(0,min(src.genetic_stability,100))
-			if(lentext(newEffect.msgGain) > 0)
+			if(length(newEffect.msgGain) > 0)
 				if (newEffect.isBad)
 					boutput(owner, "<span style=\"color:red\">[newEffect.msgGain]</span>")
 				else
@@ -425,7 +425,7 @@ var/list/datum/bioEffect/bioEffectList = list()
 		BE.OnAdd()
 		src.genetic_stability -= BE.stability_loss
 		src.genetic_stability = max(0,min(src.genetic_stability,100))
-		if(lentext(BE.msgGain) > 0)
+		if(length(BE.msgGain) > 0)
 			if (BE.isBad)
 				boutput(owner, "<span style=\"color:red\">[BE.msgGain]</span>")
 			else
@@ -443,7 +443,7 @@ var/list/datum/bioEffect/bioEffectList = list()
 			if (!D.activated_from_pool)
 				src.genetic_stability += D.stability_loss
 				src.genetic_stability = max(0,min(src.genetic_stability,100))
-			if(owner && lentext(D.msgLose) > 0)
+			if(owner && length(D.msgLose) > 0)
 				if (D.isBad)
 					boutput(owner, "<span style=\"color:blue\">[D.msgLose]</span>")
 				else

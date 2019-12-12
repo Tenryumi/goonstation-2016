@@ -471,7 +471,7 @@ var_dump
 
 		_savefileinfo(savefile/S, link = 0)
 			var/output = "<strong>savefile</strong>([S.name])"
-			var/valid_link = copytext("\ref[S]", 2, lentext("\ref[S]"))
+			var/valid_link = copytext("\ref[S]", 2, length("\ref[S]"))
 			if(link)
 				// Make link
 				return output + " <a href='#[valid_link]'>\ref[S]</a>"
@@ -484,7 +484,7 @@ var_dump
 
 		_datuminfo(datum/D, type, link = 0)
 
-			var/valid_link = copytext("\ref[D]", 2, lentext("\ref[D]"))
+			var/valid_link = copytext("\ref[D]", 2, length("\ref[D]"))
 
 			if(link)
 				// Make link
@@ -527,7 +527,7 @@ var_dump
 
 		_savefileinfo(savefile/S, link = 0)
 			var/output = "<strong>savefile</strong>([S.name])"
-			var/valid_link = copytext("\ref[S]", 2, lentext("\ref[S]"))
+			var/valid_link = copytext("\ref[S]", 2, length("\ref[S]"))
 			if(link)
 				// Make link
 				return output + " <a href='#[valid_link]'>\ref[S]</a>" + ascii2text(13) + ascii2text(10)
@@ -540,7 +540,7 @@ var_dump
 
 		_datuminfo(datum/D, type, link = 0)
 
-			var/valid_link = copytext("\ref[D]", 2, lentext("\ref[D]"))
+			var/valid_link = copytext("\ref[D]", 2, length("\ref[D]"))
 
 			if(link)
 				// Make link
