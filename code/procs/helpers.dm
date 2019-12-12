@@ -1683,7 +1683,7 @@ proc/RarityClassRoll(var/scalemax = 100, var/mod = 0, var/list/category_boundari
 /proc/is_valid_color_string(var/string)
 	if (!istext(string))
 		return 0
-	if (lentext(string) != 7)
+	if (length(string) != 7)
 		return 0
 	if (copytext(string,1,2) != "#")
 		return 0
