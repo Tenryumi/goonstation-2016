@@ -152,14 +152,15 @@ obj/recharger_placer
 		var/obj/machinery/recharger/wall/C = new/obj/machinery/recharger/wall
 
 		C.loc = src.loc
+		C.dir = src.dir
 
 		switch(dir)
 			if(1)
-				C.pixel_x = -1
-				C.pixel_y = -18
-			if(2)
 				C.pixel_x = 1
 				C.pixel_y = 18
+			if(2)
+				C.pixel_x = -1
+				C.pixel_y = -18
 			if(4)
 				C.pixel_x = 18
 				C.pixel_y = 1
