@@ -35,7 +35,7 @@
 			ldata[index] = base64str(ldata[index])
 			return ldata
 
-		var/field = copytext(index, lentext(num)+1, 0) //grab the field name e.g. [ckey]
+		var/field = copytext(index, length(num)+1, 0) //grab the field name e.g. [ckey]
 		field = copytext(field, 2, -1) //convert [ckey] to ckey
 		var/val = base64str(ldata[index]) //the actual value e.g. blah
 
