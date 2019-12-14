@@ -1056,26 +1056,61 @@
 		icon_state = "floor"
 	levelupdate()
 
+/turf/simulated/floor/proc/pry_tile(mob/user as mob)
+	if(broken || burnt)
+		boutput(user, "<span style=\"color:red\">You remove the broken plating.</span>")
+	else
+		var/atom/A = new /obj/item/tile(src)
+		if(src.material)
+			A.setMaterial(src.material)
+		else
+			var/datum/material/M = getCachedMaterial("steel")
+			A.setMaterial(M)
+	to_plating()
+	playsound(src.loc, "sound/items/Crowbar.ogg", 80, 1)
+
+
+
+///Basically just does the exact same thing as prying and then replacing a tile VERY fast
+/turf/simulated/floor/proc/replace_tile(obj/item/C as obj, mob/user as mob)
+	if (user.find_in_hands(/obj/item/crowbar))
+		pry_tile(user)
+		restore_tile_check(C, user)
+	else
+		boutput(user, "<span style=\"color:red\">You need to hold a crowbar in another hand before you can replace [src]!</span>")
+
+	return
+
+
+
+
+/turf/simulated/floor/proc/restore_tile_check(obj/item/C as obj, mob/user as mob)
+	if(!intact)
+		restore_tile()
+		var/obj/item/tile/T = C
+		if(C.material)
+			src.setMaterial(C.material)
+		playsound(src.loc, "sound/weapons/Genhit.ogg", 50, 1)
+
+		if(!istype(src.material, /datum/material/metal/steel))
+			logTheThing("station", user, null, "constructs a floor (<b>Material:</b>: [src.material && src.material.name ? "[src.material.name]" : "*UNKNOWN*"]) at [log_loc(src)].")
+
+		if(--T.amount < 1)
+			qdel(T)
+			return
+
+
+
 /turf/simulated/floor/attackby(obj/item/C as obj, mob/user as mob)
 
 	if(!C || !user)
 		return 0
-
+	
 	if(istype(C, /obj/item/crowbar) && intact)
-		if(broken || burnt)
-			boutput(user, "<span style=\"color:red\">You remove the broken plating.</span>")
-		else
-			var/atom/A = new /obj/item/tile(src)
-			if(src.material)
-				A.setMaterial(src.material)
-			else
-				var/datum/material/M = getCachedMaterial("steel")
-				A.setMaterial(M)
+		pry_tile(user)
 
-		to_plating()
-		playsound(src.loc, "sound/items/Crowbar.ogg", 80, 1)
-
-		return
+	if (istype(C, /obj/item/tile) && intact) 
+		replace_tile(C, user)
 
 	if (istype(C, /obj/item/pen))
 		var/obj/item/pen/P = C
@@ -1119,19 +1154,8 @@
 			boutput(user, "<span style=\"color:red\">You must remove the plating first.</span>")
 		return
 
-	if(istype(C, /obj/item/tile) && !intact)
-		restore_tile()
-		var/obj/item/tile/T = C
-		if(C.material)
-			src.setMaterial(C.material)
-		playsound(src.loc, "sound/weapons/Genhit.ogg", 50, 1)
-
-		if(!istype(src.material, /datum/material/metal/steel))
-			logTheThing("station", user, null, "constructs a floor (<b>Material:</b>: [src.material && src.material.name ? "[src.material.name]" : "*UNKNOWN*"]) at [log_loc(src)].")
-
-		if(--T.amount < 1)
-			qdel(T)
-			return
+	if(istype(C, /obj/item/tile))
+		restore_tile_check(C, user)
 
 	if(istype(C, /obj/item/cable_coil))
 		if(!intact)
