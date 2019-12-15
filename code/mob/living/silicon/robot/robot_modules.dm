@@ -271,10 +271,13 @@
 		src.modules += new /obj/item/reagent_containers/syringe(src)
 		src.modules += new /obj/item/reagent_containers/dropper(src)
 		src.modules += new /obj/item/reagent_containers/dropper/mechanical(src)
-		src.modules += new /obj/item/reagent_containers/food/drinks/drinkingglass(src)
-		src.modules += new /obj/item/reagent_containers/glass/beaker/large(src)
-		src.modules += new /obj/item/reagent_containers/glass/beaker/large(src)
-		src.modules += new /obj/item/reagent_containers/glass/beaker/large(src)
+		src.modules += new /obj/item/reagent_containers/food/drinks/pitcher(src)
+		//gives the user three beakers labelled with numbers
+		var/beakerNum
+		for (beakerNum = 1, beakerNum < 4, beakerNum++)
+			var/obj/item/reagent_containers/glass/beaker/large/B = new /obj/item/reagent_containers/glass/beaker/large(src)
+			B.name = "CyBeaker #[beakerNum]"
+			src.modules += B
 		src.modules += new /obj/item/extinguisher(src)
 
 /datum/robot_cosmetic/chemistry

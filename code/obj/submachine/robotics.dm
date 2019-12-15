@@ -136,26 +136,206 @@
 
 /obj/item/robot_chemaster
 	name = "Mini-ChemMaster"
-	desc = "A cybernetic tool designed for chemistry cyborgs to do their work with. Use a beaker on it to begin."
+	desc = "A cybernetic tool designed for chemistry cyborgs to do their work with. Use a beaker on it then use the device to begin."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "minichem"
 	flags = NOSPLASH
 	var/working = 0
+	var/target = null
+	var/list/whitelist = list()
+
+	handle_event(var/event)
+		if (event == "reagent_holder_update")
+			src.updateUsrDialog()
+
+	/**
+	Pulls up a different version of the CheMaster menu! The user doesn't insert the beaker, but they instead "scan" it. 
+	The device manages the reagent holder remotely. After both the device and the reagent holder are already built into
+	the silicon user operating the device!
+	Functionally it's identical to a normal CheMaster otherwise.
+	*/
+	Topic(href, href_list)
+
+		if (usr.stat || usr.restrained()) return
+
+		if (href_list["close"])
+			usr << browse(null, "window=mini_chem_master")
+			return
+
+		if (!target) return
+		var/datum/reagents/R = target:reagents
+
+		if (href_list["analyze"])
+			var/dat = "<TITLE>MINI-CHEMMMASTER</TITLE>Chemical info:<BR><BR>Name:<BR>[href_list["name"]]<BR><BR>Description:<BR>[href_list["desc"]]<BR><BR><BR><A href='?src=\ref[src];main=1'>(Back)</A>"
+			usr << browse(dat, "window=mini_chem_master;size=575x400")
+			return
+		else if (href_list["isolate"])
+			target:reagents.isolate_reagent(href_list["isolate"])
+			src.updateUsrDialog()
+			return
+		else if (href_list["remove"])
+			target:reagents.del_reagent(href_list["remove"])
+			src.updateUsrDialog()
+			return
+		else if (href_list["remove5"])
+			target:reagents.remove_reagent(href_list["remove5"], 5)
+			src.updateUsrDialog()
+			return
+		else if (href_list["remove1"])
+			target:reagents.remove_reagent(href_list["remove1"], 1)
+			src.updateUsrDialog()
+			return
+		else if (href_list["main"])
+			attack_self(usr)
+			return
+		
+		else if (href_list["createpill"])
+			var/input_name = input(usr, "Name the pill:", "Name", R.get_master_reagent_name()) as null|text
+			var/pillname = copytext(html_encode(input_name), 1, 32)
+			if (!pillname)
+				return
+			if (pillname == " ")
+				pillname = R.get_master_reagent_name()
+			var/obj/item/reagent_containers/pill/P = new/obj/item/reagent_containers/pill(src.loc)
+			P.name = "[pillname] pill"
+			R.trans_to(P, 100)//R.total_volume) we can't move all of the reagents if it's >100u so let's only move 100u
+			src.updateUsrDialog()
+			return
+		else if (href_list["multipill"])
+			// get the pill name from the user
+			var/input_pillname = input(usr, "Name the pill:", "Name", R.get_master_reagent_name()) as null|text
+			var/pillname = copytext(html_encode(input_pillname), 1, 32)
+			if (!pillname)
+				return
+			if (pillname == " ")
+				pillname = R.get_master_reagent_name()
+
+			// get the pill volume from the user
+			var/pillvol = input(usr, "Volume of chemical per pill: (Min/Max 5/100):", "Volume", 5) as null|num
+			if (!pillvol)
+				return
+			pillvol = minmax(pillvol, 5, 100)
+
+			// maths
+			var/pillcount = round(R.total_volume / pillvol) // round with a single parameter is actually floor because byond
+			if (!pillcount)
+				// invalid input
+				boutput(usr, "[src] makes a weird grinding noise. That can't be good.")
+				return
+			else
+				// create a pill bottle
+				var/obj/item/chem_pill_bottle/B = new /obj/item/chem_pill_bottle(src.loc)
+				B.create_from_reagents(R, pillname, pillvol, pillcount)
+
+			src.updateUsrDialog()
+			return
+
+		else if (href_list["createbottle"])
+			var/input_name = input(usr, "Name the bottle:", "Name", R.get_master_reagent_name()) as null|text
+			var/bottlename = copytext(html_encode(input_name), 1, 32)
+			if (!bottlename)
+				return
+			if (bottlename == " ")
+				bottlename = R.get_master_reagent_name()
+			var/obj/item/reagent_containers/glass/bottle/P = new/obj/item/reagent_containers/glass/bottle(src.loc)
+			P.name = "[bottlename] bottle"
+			R.trans_to(P,30)
+			src.updateUsrDialog()
+			return
+
+		else if (href_list["createpatch"])
+			var/input_name = input(usr, "Name the patch:", "Name", R.get_master_reagent_name()) as null|text
+			var/patchname = copytext(html_encode(input_name), 1, 32)
+			if (!patchname)
+				return
+			if (patchname == " ")
+				patchname = R.get_master_reagent_name()
+			var/med = src.check_whitelist(R)
+			var/obj/item/reagent_containers/patch/P
+			if (R.total_volume <= 20)
+				P = new /obj/item/reagent_containers/patch/mini(src.loc)
+				P.name = "[patchname] mini-patch"
+			else
+				P = new /obj/item/reagent_containers/patch(src.loc)
+				P.name = "[patchname] patch"
+			P.medical = med
+			R.trans_to(P, 40)
+			src.updateUsrDialog()
+			return
+
+		else if (href_list["multipatch"])
+			// get the pill name from the user
+			var/input_name = input(usr, "Name the patch:", "Name", R.get_master_reagent_name()) as null|text
+			var/patchname = copytext(html_encode(input_name), 1, 32)
+			if (!patchname)
+				return
+			if (patchname == " ")
+				patchname = R.get_master_reagent_name()
+
+			// get the pill volume from the user
+			var/patchvol = input(usr, "Volume of chemical per patch: (Min/Max 5/40)", "Volume", 5) as null|num
+			if (!patchvol)
+				return
+			patchvol = minmax(patchvol, 5, 40)
+
+			// maths
+			var/patchcount = round(R.total_volume / patchvol) // round with a single parameter is actually floor because byond
+			if (!patchcount)
+				// invalid input
+				boutput(usr, "[src] makes a weird grinding noise. That can't be good.")
+				return
+			else
+				// create a patchbox
+				var/obj/item/item_box/medical_patches/B = new /obj/item/item_box/medical_patches(src.loc)
+				var/med = src.check_whitelist(R)
+				for (var/i=patchcount, i>0, i--)
+					var/obj/item/reagent_containers/patch/P
+					if (patchvol <= 20)
+						P = new /obj/item/reagent_containers/patch/mini(B)
+						P.name = "[patchname] mini-patch"
+					else
+						P = new /obj/item/reagent_containers/patch(B)
+						P.name = "[patchname] patch"
+					P.medical = med
+					R.trans_to(P, patchvol)
+
+			src.updateUsrDialog()
+			return
+
+		else
+			usr << browse(null, "window=mini_chem_master")
+			return
+
+		return
+
+	//No, you are a borgo! You will STICK to this whitelist and there's no weaseling out of it with an emagged status!
+	proc/check_whitelist(var/datum/reagents/R)
+		var/all_safe = 1
+		for (var/reagent_id in R.reagent_list)
+			if (!src.whitelist.Find(reagent_id))
+				all_safe = 0
+		return all_safe
 
 	attackby(obj/item/W as obj, mob/user as mob)
 		//in case a non-borg user somehow gets their hands on this thing, god forbid
 		if (!istype(user, /mob/living/silicon/robot/))
 			boutput(user, "This device is only compatible with mechanical users.")
 			return
+
 		if (!istype(W,/obj/item/reagent_containers/glass/)) return
 		var/obj/item/reagent_containers/glass/B = W
 
-		if(!B.reagents.reagent_list.len || B.reagents.total_volume < 1)
-			boutput(user, "<span style=\"color:red\">That beaker is empty! There are no reagents for the [src.name] to process!</span>")
+
+		if ( !(B.reagents.total_volume) )
+			boutput(user, "<span style=\"color:red\">That beaker is empty! There are no reagents for [src.name] to process!</span>")
 			return
 		if (working)
-			boutput(user, "<span style=\"color:red\">Chemmaster is working, be patient</span>")
+			boutput(user, "<span style=\"color:red\">Mini-ChemMaster is working, please be patient!</span>")
 			return
+
+		//The new target beaker is now this one!
+		target = B
+		boutput(user, "You select [B.name] with your [src.name].")
 
 		working = 1
 		var/the_reagent = input("Which reagent do you want to manipulate?","Mini-ChemMaster",null,null) in B.reagents.reagent_list
@@ -201,6 +381,29 @@
 
 		working = 0
 
+	attack_self(mob/user as mob)
+		user.machine = src
+		var/dat = ""
+		if (!target)
+			dat = "Select a beaker to begin."
+			dat += "<A href='?src=\ref[src];close=1'>Close</A>"
+		else
+			var/datum/reagents/R = target:reagents
+			if (!R.total_volume)
+				dat += "Beaker is empty."
+			else
+				dat += "Contained reagents:<BR>"
+				for (var/reagent_id in R.reagent_list)
+					var/datum/reagent/current_reagent = R.reagent_list[reagent_id]
+					dat += "[capitalize(current_reagent.name)] - [current_reagent.volume] Units - <A href='?src=\ref[src];analyze=1;desc=[html_encode(current_reagent.description)];name=[capitalize(current_reagent.name)]'>(Analyze)</A> <A href='?src=\ref[src];isolate=[current_reagent.id]'>(Isolate)</A> <A href='?src=\ref[src];remove=[current_reagent.id]'>(Remove all)</A> <A href='?src=\ref[src];remove5=[current_reagent.id]'>(-5)</A> <A href='?src=\ref[src];remove1=[current_reagent.id]'>(-1)</A><BR>"
+				dat += "<BR><A href='?src=\ref[src];createpill=1'>Create pill (100 units max)</A><BR>"
+				dat += "<A href='?src=\ref[src];multipill=1'>Create multiple pills (5 units min)</A><BR>"
+				dat += "<A href='?src=\ref[src];createbottle=1'>Create bottle (30 units max)</A><BR>"
+				dat += "<A href='?src=\ref[src];createpatch=1'>Create patch (40 units max)</A><BR>"
+				dat += "<A href='?src=\ref[src];multipatch=1'>Create multiple patches (5 units min)</A>"
+		user << browse("<TITLE>Mini-ChemMaster</TITLE>ChemMaster menu:<BR><BR>[dat]", "window=mini_chem_master;size=575x400")
+		onclose(user, "mini_chem_master")
+		return
 /obj/item/robot_foodsynthesizer
 	name = "Food Synthesizer"
 	desc = "A portable food synthesizer."

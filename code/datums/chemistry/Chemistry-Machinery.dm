@@ -283,22 +283,12 @@
 			return
 
 		if (istype(user,/mob/living/silicon/robot/))
-			var/the_reagent = input("Which chemical do you want to put in the [glass_name]?", "[dispenser_name] Dispenser", null, null) as null|anything in src.dispensable_reagents
-			if (!the_reagent)
+			if (src.beaker)
+				boutput(user, "A [glass_name] is loaded into the machine. Remove it first.")
 				return
-			var/amtlimit = B.reagents.maximum_volume - B.reagents.total_volume
-			var/amount = input("How much of it do you want? (1 to [amtlimit])", "[dispenser_name] Dispenser", null, null) as null|num
-			if (!amount)
-				return
-			amount = max(min(amount, amtlimit),0)
-			if (get_dist(src,user) > 1)
-				boutput(user, "You need to move closer to get the chemicals!")
-				return
-			if (stat & (NOPOWER|BROKEN))
-				user.show_text("[src] seems to be out of order.", "red")
-				return
-			B.reagents.add_reagent(the_reagent,amount)
-			B.reagents.handle_reactions()
+
+			src.beaker =  B
+			attack_hand(user)
 			return
 
 		else
@@ -464,7 +454,7 @@
 			return
 		user.machine = src
 		var/dat = ""
-		if(!beaker)
+		if(!beaker && (!istype(user, /mob/living/silicon/robot)))
 			dat = "Please insert [glass_name].<BR>"
 		else
 			var/datum/reagents/R = beaker:reagents
@@ -612,7 +602,7 @@
 		icon_state = "mixer1"
 
 	Topic(href, href_list)
-		if (stat & BROKEN) return
+		if (stat & BROKEN) return	
 		if (usr.stat || usr.restrained()) return
 		if (!in_range(src, usr)) return
 
