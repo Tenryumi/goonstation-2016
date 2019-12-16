@@ -144,6 +144,11 @@
 	var/target = null
 	var/list/whitelist = list()
 
+	New()
+		..()
+		if (islist(chem_whitelist) && chem_whitelist.len)
+			src.whitelist = chem_whitelist
+
 	handle_event(var/event)
 		if (event == "reagent_holder_update")
 			src.updateUsrDialog()

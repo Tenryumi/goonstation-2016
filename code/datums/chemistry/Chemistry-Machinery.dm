@@ -454,8 +454,10 @@
 			return
 		user.machine = src
 		var/dat = ""
-		if(!beaker && (!istype(user, /mob/living/silicon/robot)))
+		if(!beaker && (!istype(user, /mob/living/silicon/robot)) )
 			dat = "Please insert [glass_name].<BR>"
+		else if (!beaker && istype(user, /mob/living/silicon/robot))
+			dat = "Silicon user detected. Please scan beaker to begin.<BR>"
 		else
 			var/datum/reagents/R = beaker:reagents
 			dat += "<A href='?src=\ref[src];eject=1'>Eject [glass_name]</A><BR><BR>"
@@ -602,7 +604,7 @@
 		icon_state = "mixer1"
 
 	Topic(href, href_list)
-		if (stat & BROKEN) return	
+		if (stat & BROKEN) return
 		if (usr.stat || usr.restrained()) return
 		if (!in_range(src, usr)) return
 
