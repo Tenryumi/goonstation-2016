@@ -1368,6 +1368,78 @@
 	name = "Inner Maintenance"
 	icon_state = "imaint"
 
+/////////////////////////////////////////////////// Donut 3 specific areas
+
+/area/station/maintenance/outer
+	name = "Outer Maintenance"
+	icon_state = "OUT_maint"
+
+/area/station/maintenance/inner/north
+	name = "North Inner Maintenance"
+	icon_state = "IN_Nmaint"
+
+/area/station/maintenance/inner/ne
+	name = "Northeast Inner Maintenance"
+	icon_state = "IN_NEmaint"
+
+/area/station/maintenance/inner/east
+	name = "East Inner Maintenance"
+	icon_state = "IN_Emaint"
+
+/area/station/maintenance/inner/se
+	name = "Southeast Inner Maintenance"
+	icon_state = "IN_SEmaint"
+
+/area/station/maintenance/inner/south
+	name = "South Inner Maintenance"
+	icon_state = "IN_Smaint"
+
+/area/station/maintenance/inner/sw
+	name = "Southwest Inner Maintenance"
+	icon_state = "IN_SWmaint"
+
+/area/station/maintenance/inner/west
+	name = "West Inner Maintenance"
+	icon_state = "IN_Wmaint"
+
+/area/station/maintenance/inner/nw
+	name = "Northwest Inner Maintenance"
+	icon_state = "IN_NWmaint"
+
+//////// outer maint
+
+/area/station/maintenance/outer/north
+	name = "North Outer Maintenance"
+	icon_state = "OUT_Nmaint"
+
+/area/station/maintenance/outer/ne
+	name = "Northeast Outer Maintenance"
+	icon_state = "OUT_NEmaint"
+
+/area/station/maintenance/outer/east
+	name = "East Outer Maintenance"
+	icon_state = "OUT_Emaint"
+
+/area/station/maintenance/outer/se
+	name = "Southeast Outer Maintenance"
+	icon_state = "OUT_SEmaint"
+
+/area/station/maintenance/outer/south
+	name = "South Outer Maintenance"
+	icon_state = "OUT_Smaint"
+
+/area/station/maintenance/outer/sw
+	name = "Southwest Outer Maintenance"
+	icon_state = "OUT_SWmaint"
+
+/area/station/maintenance/outer/west
+	name = "West Outer Maintenance"
+	icon_state = "OUT_Wmaint"
+
+/area/station/maintenance/outer/nw
+	name = "Northwest Outer Maintenance"
+	icon_state = "OUT_NWmaint"
+
 /area/station/maintenance/storage
 	name = "Atmospherics"
 	icon_state = "green"
