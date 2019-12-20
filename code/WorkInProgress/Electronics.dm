@@ -134,6 +134,80 @@
 	var/list/needed_parts = new/list()
 	module_research = list("electronics" = 3, "engineering" = 1)
 
+
+	/**
+	This deploys an assembly as an attachment to a turf, much like how a user can attach light frames to walls.
+	The attached object is not actually *ON* the wall turf itself but instead is at the location of the user
+	and its pixels are appropriately displaced depending on which direction the user is facing when they
+	deploy it.
+	*/
+	proc/deploy_turf(atom/target as mob|obj|turf|area, mob/user as mob)
+		var/turf/T = get_turf(src)
+		// I'd like to use the progress bar delay proc right here like the normal deploy() does but uuuhhhh... yeah, could a coder put it in here please?
+		var/obj/O = new store_type(T)
+		O.dir = user.dir
+
+		switch (O.dir)
+			if (1)
+				O.pixel_x = 1
+				O.pixel_y = 18
+			if (2)
+				O.pixel_x = -1
+				O.pixel_y = -18
+			if (4)
+				O.pixel_x = 18
+				O.pixel_y = 1
+			if (8)
+				O.pixel_x = -18
+				O.pixel_y = -1
+
+		O.mats = "Built"
+		user.visible_message("<span style=\"color:red\">[user] assembles a [O.name]!</span>")
+		qdel(src)
+
+
+		
+
+	//If the assembly contains a wall mounted recharger and the user is holding a solder, 
+	//attach it to a wall in the same way the charger placer does
+	afterattack(atom/target as mob|obj|turf|area, mob/user as mob)
+		if(src.secured == 2)
+
+			if (user.find_in_hand(src))
+
+				if(istype(user, /mob/living/carbon/human) && user.bioHolder)
+
+					if (user.find_in_hands(/obj/item/electronics/soldering))
+
+						if (src.store_type == /obj/machinery/recharger/wall)
+
+							if(isturf(target) && target.density)
+								user.drop_item()
+								src.loc = user.loc
+								deploy_turf(target, user)
+								return
+						else
+							boutput(user, "<span style=\"color:red\">You can only deploy wall-mounted rechargers this way!</span>")
+							return
+					
+					else
+						boutput(user, "<span style=\"color:red\">You must be holding a soldering iron in another hand to assemble this!</span>")
+						return
+				
+				else
+					boutput(user, "<span style=\"color:red\">The assembly can only be deployed by humanoids.</span>")
+					return
+			
+			else
+				boutput(user, "<span style=\"color:red\">The assembly needs to be in one of your hands. How did you even do that?</span>")
+				return
+		
+		else
+			boutput (user, "<span style=\"color:red\">The assembly should be secured first!</span>")
+			return
+	
+		
+
 /obj/item/electronics/frame/verb/rotate()
 	set src in view(1)
 	if (!istype(usr, /mob/living))
