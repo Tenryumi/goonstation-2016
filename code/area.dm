@@ -1370,6 +1370,34 @@
 
 /////////////////////////////////////////////////// Donut 3 specific areas
 
+// Security
+
+/area/station/security/quarters
+	name = "Security Officer Quarters"
+	icon_state = "officer_quarters"
+
+/area/station/security/equipment
+	name = "Security Equipment Storage"
+	icon_state = "sec_equipment"
+
+/area/station/security/interrogation
+	name = "Security Interrogation"
+	icon_state = "interrogation"
+
+/area/station/security/brig/north_side
+	name = "Brig Long-Term Cell - North Side"
+	icon_state = "brigcell_Nside"
+
+/area/station/security/brig/south_side
+	name = "Brig Long-Term Cell - South Side"
+	icon_state = "brigcell_Sside"
+
+/area/station/security/brig/solitary
+	name = "Brig - Solitary Cells"
+	icon_state = "brigcell"
+
+// INNER Maintenance
+
 /area/station/maintenance/outer
 	name = "Outer Maintenance"
 	icon_state = "OUT_maint"
@@ -1406,7 +1434,7 @@
 	name = "Northwest Inner Maintenance"
 	icon_state = "IN_NWmaint"
 
-//////// outer maint
+// OUTER maintenance
 
 /area/station/maintenance/outer/north
 	name = "North Outer Maintenance"
