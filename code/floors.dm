@@ -717,6 +717,8 @@
 /turf/simulated/floor/stairs/wood2/wide
 	icon_state = "wood2_stairs2"
 
+/turf/simulated/floor/stairs/wood2/middle
+	icon_state = "wood2_stairs2_middle"
 
 /turf/simulated/floor/stairs/wood3
 	icon_state = "wood3_stairs"
