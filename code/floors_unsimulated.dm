@@ -53,6 +53,9 @@
 /turf/unsimulated/floor/plating/damaged3
 	icon_state = "platingdmg3"
 
+/turf/unsimulated/floor/plating/jen
+	icon_state = "plating_jen"
+
 /////////////////////////////////////////
 
 /turf/unsimulated/floor/grime
@@ -609,6 +612,9 @@
 
 /turf/unsimulated/floor/stairs/wide/green
 	icon_state = "Stairs_wide_green"
+
+/turf/unsimulated/floor/stairs/wide/green/other
+	icon_state = "Stairs_wide_green_other"
 
 /turf/unsimulated/floor/stairs/wide/middle
 	icon_state = "stairs_middle"

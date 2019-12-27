@@ -44,6 +44,11 @@
 		desc = "This doesn't look very safe at all!"
 		layer = CATWALK_LAYER
 		shock_when_entered = 0
+	
+	catwalk/jen
+		name = "maintenance catwalk"
+		icon_state = "catwalk_jen"
+		desc = "This looks marginally more safe than the ones outside!"
 
 	onMaterialChanged()
 		..()

@@ -833,6 +833,10 @@
 	sample_reagent = "iron"
 	sample_verb = "scrape"
 
+/obj/decal/cleanable/rust/jen
+	icon_state = "rust_jen"
+	random_icon_states = null
+
 /obj/decal/cleanable/balloon
 	name = "balloon"
 	desc = "The remains of a balloon."
@@ -1180,6 +1184,9 @@
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "dirt"
 	random_dir = 1
+
+/obj/decal/cleanable/dirt/jen
+	icon_state = "dirt_jen"
 
 /obj/decal/cleanable/cobweb
 	name = "cobweb"

@@ -104,6 +104,10 @@
 /turf/simulated/floor/plating/damaged3
 	icon_state = "platingdmg3"
 
+/turf/simulated/floor/plating/jen
+	icon_state = "plating_jen"
+
+
 /////////////////////////////////////////
 
 /turf/simulated/floor/grime
@@ -679,6 +683,9 @@
 
 /turf/simulated/floor/stairs/wide/green
 	icon_state = "Stairs_wide_green"
+
+/turf/simulated/floor/stairs/wide/green/other
+	icon_state = "Stairs_wide_green_other"
 
 /turf/simulated/floor/stairs/wide/middle
 	icon_state = "stairs_middle"
