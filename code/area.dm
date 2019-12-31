@@ -1396,6 +1396,12 @@
 	name = "Brig - Solitary Cells"
 	icon_state = "brigcell"
 
+// Medical
+
+/area/station/medical/medbay/treatment
+	name = "Treatment Center"
+	icon_state = "treatment_center"
+
 // INNER Maintenance
 
 /area/station/maintenance/outer
@@ -1467,6 +1473,8 @@
 /area/station/maintenance/outer/nw
 	name = "Northwest Outer Maintenance"
 	icon_state = "OUT_NWmaint"
+
+////////////////////////////////////////////////////////// end
 
 /area/station/maintenance/storage
 	name = "Atmospherics"
