@@ -71,6 +71,7 @@
 	var/removable_bulb = 1
 	var/datum/light/point/light
 
+//regular light bulbs
 /obj/machinery/light/small
 	icon_state = "bulb1"
 	base_state = "bulb"
@@ -79,6 +80,40 @@
 	desc = "A small lighting fixture."
 	light_type = /obj/item/light/bulb
 	light_name = "light bulb"
+
+	netural
+		name = "incandescent light bulb"
+		light_type = /obj/item/light/bulb/neutral
+	greenish
+		name = "greenish incandescent light bulb"
+		light_type = /obj/item/light/bulb/greenish
+	blueish
+		name = "blueish fluorescent light bulb"
+		light_type = /obj/item/light/bulb/blueish
+	purpleish
+		name = "purpleish fluorescent light bulb"
+		light_type = /obj/item/light/bulb/purpleish
+
+	warm
+		name = "fluorescent light bulb"
+		light_type = /obj/item/light/bulb/warm
+		very
+			name = "warm fluorescent light bulb"
+			light_type = /obj/item/light/bulb/warm/very
+
+	cool
+		name = "cool incandescent light bulb"
+		light_type = /obj/item/light/bulb/cool
+		very
+			name = "very cool incandescent light bulb"
+			light_type = /obj/item/light/bulb/cool/very
+
+	harsh
+		name = "harsh incandescent light bulb"
+		light_type = /obj/item/light/bulb/harsh
+		very
+			name = "very harsh incandescent light bulb"
+			light_type = /obj/item/light/bulb/harsh/very
 
 /obj/machinery/light/emergency
 	icon_state = "ebulb1"
@@ -196,6 +231,77 @@
 	New()
 		..()
 		light.set_color(0.85, 0.45, 0.35)
+
+//special lights w very specific colors. made for sealab!
+/obj/machinery/light/incandescent
+	light_type = /obj/item/light/tube
+	var/nostick = 0 //If set to true, overrides the autopositioning.
+
+	New()
+		//auto position these lights so i don't have to mess with dirs in the map editor that's annoying!!!
+		if (!nostick) // unless nostick is set in which case... dont
+			spawn(1) //wait for the wingrille spawners to complete when map is loading (ugly i am sorry)
+				var/turf/T = null
+				for (var/dir in cardinal)
+					T = get_step(src,dir)
+					if (istype(T,/turf/simulated/wall) || (locate(/obj/wingrille_spawn) in T) || (locate(/obj/window) in T))
+						src.dir = dir
+						if (dir == EAST)
+							src.pixel_x = 10
+						else if (dir == WEST)
+							src.pixel_x = -10
+						else if (dir == NORTH)
+							src.pixel_y = 21
+						break
+				T = null
+
+		..()
+
+	name = "incandescent light fixture"
+	light_type = /obj/item/light/tube/neutral
+
+	netural
+		name = "incandescent light fixture"
+		light_type = /obj/item/light/tube/neutral
+	greenish
+		name = "greenish incandescent light fixture"
+		light_type = /obj/item/light/tube/greenish
+	blueish
+		name = "blueish fluorescent light fixture"
+		light_type = /obj/item/light/tube/blueish
+	purpleish
+		name = "purpleish fluorescent light fixture"
+		light_type = /obj/item/light/tube/purpleish
+
+	warm
+		name = "fluorescent light fixture"
+		light_type = /obj/item/light/tube/warm
+		very
+			name = "warm fluorescent light fixture"
+			light_type = /obj/item/light/tube/warm/very
+
+	cool
+		name = "cool incandescent light fixture"
+		light_type = /obj/item/light/tube/cool
+		very
+			name = "very cool incandescent light fixture"
+			light_type = /obj/item/light/tube/cool/very
+
+	harsh
+		name = "harsh incandescent light fixture"
+		light_type = /obj/item/light/tube/harsh
+		very
+			name = "very harsh incandescent light fixture"
+			light_type = /obj/item/light/tube/harsh/very
+
+	small
+		icon_state = "bulb1"
+		base_state = "bulb"
+		fitting = "bulb"
+		brightness = 1.2
+		desc = "A small lighting fixture."
+		light_type = /obj/item/light/bulb
+		light_name = "light bulb"
 
 // create a new lighting fixture
 /obj/machinery/light/New()
@@ -684,7 +790,68 @@
 		base_state = "btube"
 		color_r = 0.3
 		color_g = 0
-		color_r = 0.9
+		color_b = 0.9
+
+	warm
+		name = "fluorescent light tube"
+		color_r = 1
+		color_g = 0.844
+		color_b = 0.81
+
+		very
+			name = "warm fluorescent light tube"
+			color_r = 1
+			color_g = 0.67
+			color_b = 0.67
+
+	neutral
+		name = "incandescent light tube"
+		color_r = 0.95
+		color_g = 0.98
+		color_b = 0.97
+
+	greenish
+		name = "greenish incandescent light tube"
+		color_r = 0.87
+		color_g = 0.98
+		color_b = 0.89
+
+	blueish
+		name = "blueish fluorescent light tube"
+		color_r = 0.51
+		color_g = 0.66
+		color_b = 0.85
+
+	purpleish
+		name = "purpleish fluorescent light tube"
+		color_r = 0.42
+		color_g = 0.20
+		color_b = 0.58
+
+	cool
+		name = "cool incandescent light tube"
+		color_r = 0.88
+		color_g = 0.904
+		color_b = 1
+
+		very
+			name = "very cool incandescent light tube"
+			color_r = 0.74
+			color_g = 0.74
+			color_b = 1
+
+	harsh
+		name = "harsh incandescent light tube"
+		color_r = 0.99
+		color_g = 0.899
+		color_b = 0.99
+
+		very
+			name = "very harsh incandescent light tube"
+			color_r = 0.99
+			color_g = 0.81
+			color_b = 0.99
+
 // the smaller bulb light fixture
 
 /obj/item/light/bulb
@@ -748,6 +915,66 @@
 		color_r = 1
 		color_g = 0.2
 		color_b = 0.2
+
+	warm
+		name = "fluorescent light bulb"
+		color_r = 1
+		color_g = 0.844
+		color_b = 0.81
+
+		very
+			name = "warm fluorescent light bulb"
+			color_r = 1
+			color_g = 0.67
+			color_b = 0.67
+
+	neutral
+		name = "incandescent light bulb"
+		color_r = 0.95
+		color_g = 0.98
+		color_b = 0.97
+
+	greenish
+		name = "greenish incandescent light bulb"
+		color_r = 0.87
+		color_g = 0.98
+		color_b = 0.89
+
+	blueish
+		name = "blueish fluorescent light bulb"
+		color_r = 0.51
+		color_g = 0.66
+		color_b = 0.85
+
+	purpleish
+		name = "purpleish fluorescent light bulb"
+		color_r = 0.42
+		color_g = 0.20
+		color_b = 0.58
+
+	cool
+		name = "cool incandescent light bulb"
+		color_r = 0.88
+		color_g = 0.904
+		color_b = 1
+
+		very
+			name = "very cool incandescent light bulb"
+			color_r = 0.74
+			color_g = 0.74
+			color_b = 1
+
+	harsh
+		name = "harsh incandescent light bulb"
+		color_r = 0.99
+		color_g = 0.899
+		color_b = 0.99
+
+		very
+			name = "very harsh incandescent light bulb"
+			color_r = 0.99
+			color_g = 0.81
+			color_b = 0.99
 
 /obj/item/light/big_bulb
 	name = "beacon bulb"

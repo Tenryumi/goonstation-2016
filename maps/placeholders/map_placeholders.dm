@@ -219,6 +219,40 @@
 	icon = 'maps/placeholders/map_placeholders.dmi'
 	icon_state = "floor_light"
 
+	netural
+		name = "incandescent light fixture"
+		light_type = /obj/item/light/bulb/neutral
+	greenish
+		name = "greenish incandescent light fixture"
+		light_type = /obj/item/light/bulb/greenish
+	blueish
+		name = "blueish fluorescent light fixture"
+		light_type = /obj/item/light/bulb/blueish
+	purpleish
+		name = "purpleish fluorescent light fixture"
+		light_type = /obj/item/light/bulb/purpleish
+
+	warm
+		name = "fluorescent light fixture"
+		light_type = /obj/item/light/bulb/warm
+		very
+			name = "warm fluorescent light fixture"
+			light_type = /obj/item/light/bulb/warm/very
+
+	cool
+		name = "cool incandescent light fixture"
+		light_type = /obj/item/light/bulb/cool
+		very
+			name = "very cool incandescent light fixture"
+			light_type = /obj/item/light/bulb/cool/very
+
+	harsh
+		name = "harsh incandescent light fixture"
+		light_type = /obj/item/light/bulb/harsh
+		very
+			name = "very harsh incandescent light fixture"
+			light_type = /obj/item/light/bulb/harsh/very
+
 /obj/decal/fakeobjects/vacuumtape
 	name = "vacuum column tape drive"
 	desc = "just a placeholder for now, ignore the bad sprite"
@@ -325,3 +359,91 @@
 	icon = 'maps/placeholders/map_placeholders.dmi'
 	icon_state = "phone_handset"
 
+/obj/cabinet
+	name = "Cabinet"
+	desc = "just a placeholder for now, ignore the bad sprite"
+	icon = 'maps/placeholders/map_placeholders.dmi'
+	icon_state = "cabinet"
+
+/obj/dispenser
+	name = "handcuff dispenser"
+	desc = "A handy dispenser for handcuffs."
+	icon = 'maps/placeholders/map_placeholders.dmi'
+	icon_state = "handcuff"
+
+/obj/machinery/manufacturer/qm
+	name = "Crate Manufacturer"
+	desc = "A manufacturing unit calibrated to produce different crates and boxes."
+	icon_state = "cratemanu"
+	icon = 'maps/placeholders/map_placeholders.dmi'
+
+/obj/machinery/genetics_booth
+	name = "gene booth"
+	desc = "A luxury booth that will exchange genetic upgrades for cash. It automatically bills your account using advanced magnet technology. It's safe!"
+	icon = 'maps/placeholders/map_placeholders.dmi'
+	icon_state = "genebooth"
+
+/obj/machinery/door/airlock/pyro/glass/windoor
+	name = "windoor"
+	desc = "just a placeholder for now, ignore the bad sprite"
+	icon_state = "windoor_closed"
+	icon = 'maps/placeholders/map_placeholders.dmi'
+
+
+/obj/item/storage/wall/clothingrack
+	name = "clothing rack"
+	desc = "just a placeholder for now, ignore the bad sprite"
+	icon = 'maps/placeholders/map_placeholders.dmi'
+	icon_state = "clothesrack"
+
+/obj/machinery/weapon_stand
+	name = "weapon stand"
+	desc = "A stand which can hold a weapon. This one is a little generic looking."
+	icon = 'maps/placeholders/map_placeholders.dmi'
+	icon_state = "weaponrack"
+
+	katana_stand
+		name = "katana stand"
+		desc = "A wooden stand for holding a katana in it's sheath."
+		color = "#d43131"
+
+	taser_rack
+		name = "taser rack"
+		desc = "A storage rack that fits 4 taser guns. Efficient!"
+		color = "#F0F"
+
+		recharger
+			name = "taser recharger rack"
+			desc = "A taser rack that can charge up to 3 taser guns. Handy!"
+			color = "#801a80"
+
+	egun_rack
+		name = "energy gun rack"
+		desc = "A storage rack that fits 4 energy guns. Tidy!"
+		color = "#29df50"
+
+		recharger
+			name = "energy gun recharger rack"
+			desc = "An energy gun rack that will recharge 3 energy guns."
+			color = "#00b7ff"
+
+	shotgun_rack
+		name = "shotgun rack"
+		desc = "A rack for holding 3 shotguns."
+		icon_state = "shotgun_rack"
+		color = "#FF0"
+
+/obj/machinery/disposal_pipedispenser/mobile
+	name = "Disposal Pipe Dispenser Cart"
+	desc = "A tool for removing some of the tedium from pipe-laying."
+	icon_state = "pipelayer"
+	icon = 'maps/placeholders/map_placeholders.dmi'
+
+
+/obj/decal/poster/wallsign/bookcase
+	name = "bookcase"
+	desc = "bookcase wallpaper"
+	icon = 'icons/turf/adventure.dmi'
+	icon_state = "bookcase_full_wall"
+	pixel_y = -4
+	layer = 3
