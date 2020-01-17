@@ -14,6 +14,28 @@
 	var/used = 0
 	var/id = null
 
+	proc/close_self()
+		icon_state = "crevice1"
+		desc = "The crevice has closed"
+		used = 1
+
+	proc/eat_arm(var/mob/user as mob, arm_to_cronch)
+		boutput(user, "<span style=\"color:red\"><B>You fail to break free!</B></span>")
+		boutput(user, "<span style=\"color:red\"><B>CRONCH</B></span>")
+		user.TakeDamage("All", rand(20, 30), 0, 0, DAMAGE_STAB, 1) //Limb loss disallowed here to make sure that the immediately following limb loss works properly!
+		if (istype(user, /mob/living/carbon/human))
+			switch(arm_to_cronch)
+				if("l_arm")
+					qdel(user.limbs.l_arm)
+				if("r_arm")
+					qdel(user.limbs.r_arm)
+		user.updatehealth()
+		sleep(30)
+		playsound(src.loc, "sound/misc/burp_alien.ogg", 50, 1)
+		var/obj/decal/cleanable/blood/gibs/gib =new /obj/decal/cleanable/blood/gibs/core( src.loc )
+		gib.streak(src.dir)
+		close_self()
+
 /obj/crevice/attack_hand(var/mob/user as mob)
 	if(..())
 		return
@@ -32,31 +54,14 @@
 		user.stunned += 10
 		spawn(30)
 			if(prob(25))
-				boutput(user, "<span style=\"color:red\"><B>You fail to break free!</B></span>")
-				var/mob/dead/observer/newmob
-				if (user.client)
-					newmob = new/mob/dead/observer(user)
-					user:client:mob = newmob
-				qdel(user)
-				sleep(30)
-				playsound(src.loc, "sound/misc/burp_alien.ogg", 50, 1)
-				var/obj/decal/cleanable/blood/gibs/gib =new /obj/decal/cleanable/blood/gibs/core( src.loc )
-				gib.streak(src.dir)
-				gib =new /obj/decal/cleanable/blood/gibs( src.loc )
-				gib.streak(src.dir)
-				var/limb_type = pick(/obj/item/parts/human_parts/arm/left, /obj/item/parts/human_parts/arm/right, /obj/item/parts/human_parts/leg/left, /obj/item/parts/human_parts/leg/right)
-				gib = new limb_type(src.loc)
-				gib.throw_at(get_edge_target_turf(src.loc, src.dir), 4, 3)
-				icon_state = "crevice1"
-				desc = "The crevice has closed"
-				used = 1
+				eat_hand(user)
 				return
 			else
 				boutput(user, "<span style=\"color:red\">You manage to pull out your hand!</span>")
 				user.stunned -= 10
 				if(user.stunned<0)
 					user.stunned = 0
-				user.TakeDamage("All", 20, 0, DAMAGE_STAB)
+				user.TakeDamage("All", 10, 0, DAMAGE_STAB)
 				user.updatehealth()
 				var/obj/decal/cleanable/blood/gibs/gib =new /obj/decal/cleanable/blood/gibs( src.loc )
 				gib.streak(user.dir)
@@ -71,9 +76,7 @@
 		boutput(user, "<span style=\"color:red\">There doesn't appear to be anything inside</span>")
 		var/obj/decal/cleanable/blood/gibs/gib =new /obj/decal/cleanable/blood/gibs( src.loc )
 		gib.streak(user.dir)
-	icon_state = "crevice1"
-	used = 1
-	desc = "The crevice has closed"
+	close_self()
 
 
 
