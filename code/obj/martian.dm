@@ -19,16 +19,20 @@
 		desc = "The crevice has closed"
 		used = 1
 
-	proc/eat_arm(var/mob/user as mob, arm_to_cronch)
-		boutput(user, "<span style=\"color:red\"><B>You fail to break free!</B></span>")
+	proc/eat_hand(var/mob/user as mob)
+		user.show_text("You fail to break free!", "red")
 		boutput(user, "<span style=\"color:red\"><B>CRONCH</B></span>")
+		if (user.hand && user.limbs)
+			user.drop_item()
+			if (user.hand == 0 && user.limbs.r_arm) // Right hand
+				var/obj/item/parts/r_arm = user.limbs.r_arm
+				r_arm.sever()
+				qdel(r_arm)
+			else if (user.hand == 1 && user.limbs.l_arm) // Left hand
+				var/obj/item/parts/l_arm = user.limbs.l_arm
+				l_arm.sever()
+				qdel(l_arm)
 		user.TakeDamage("All", rand(20, 30), 0, 0, DAMAGE_STAB, 1) //Limb loss disallowed here to make sure that the immediately following limb loss works properly!
-		if (istype(user, /mob/living/carbon/human))
-			switch(arm_to_cronch)
-				if("l_arm")
-					qdel(user.limbs.l_arm)
-				if("r_arm")
-					qdel(user.limbs.r_arm)
 		user.updatehealth()
 		sleep(30)
 		playsound(src.loc, "sound/misc/burp_alien.ogg", 50, 1)
@@ -43,6 +47,8 @@
 		return
 	playsound(src.loc, "sound/effects/fleshbr1.ogg", 50, 1)
 	boutput(user, "<span style=\"color:red\">You reach your hand into the crevice.</span>")
+
+
 
 	if(id)
 		for(var/obj/machinery/door/unpowered/martian/D)
