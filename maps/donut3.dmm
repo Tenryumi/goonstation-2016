@@ -68,6 +68,7 @@
 "bx" = (/turf/simulated/floor/engine,/area/station/science/lab)
 "by" = (/turf/simulated/floor/black,/area/station/bridge)
 "bz" = (/obj/decal/poster/wallsign/stencil/right/one{pixel_x = 1; pixel_y = 12},/turf/simulated/wall,/area/station/security/brig/solitary)
+"bB" = (/obj/machinery/door/airlock/pyro/medical/alt{dir = 4},/obj/decal/mule/dropoff,/obj/firedoor_spawn,/obj/access_spawn/research,/turf/simulated/floor,/area)
 "bE" = (/turf/space,/area/station/engine/engineering)
 "bF" = (/turf/simulated/wall,/area/station/security/quarters)
 "bG" = (/turf/simulated/floor/carpet/green/standard/edge{dir = 5},/area/station/science)
@@ -192,6 +193,7 @@
 "ey" = (/obj/decal/tile_edge/stripe/extra_big{dir = 8},/turf/simulated/floor,/area/station/hangar/science)
 "ez" = (/obj/machinery/chem_heater{dir = 8},/obj/decal/tile_edge/stripe/extra_big{dir = 10},/turf/simulated/floor/shuttlebay{name = "reinforced plating"},/area/station/chemistry)
 "eB" = (/obj/shrub{dir = 6; icon_state = "shrub"},/turf/simulated/floor/circuit/red,/area/station/security/main)
+"eD" = (/obj/machinery/computer/pathology{dir = 8},/turf/simulated/floor/green,/area)
 "eE" = (/turf/space,/area/station/crew_quarters/kitchen)
 "eF" = (/turf/simulated/floor/white,/area/station/medical/medbay)
 "eG" = (/obj/machinery/door/airlock/pyro/maintenance,/obj/access_spawn/maint,/obj/firedoor_spawn,/obj/decal/mule/dropoff,/turf/simulated/floor/airless/plating,/area/station/maintenance/inner/sw)
@@ -229,6 +231,7 @@
 "fC" = (/turf/simulated/floor/bluewhite/corner{dir = 4},/area/station/medical/medbay/treatment)
 "fD" = (/obj/wingrille_spawn/reinforced/full,/turf/simulated/floor/plating,/area/station/hallway)
 "fE" = (/turf/space,/area/station/maintenance/eastsolar)
+"fG" = (/obj/decal/mule/dropoff,/obj/machinery/door/airlock/pyro/glass{dir = 2},/obj/firedoor_spawn,/turf/simulated/floor/white,/area)
 "fI" = (/obj/grille/catwalk/jen,/obj/decal/cleanable/dirt/jen,/turf/simulated/floor/plating/jen,/area/station/maintenance/inner/south)
 "fJ" = (/obj/table/reinforced/auto,/obj/item/gun/kinetic/dart_rifle{pixel_x = 2; pixel_y = 13},/obj/item/ammo/bullets/tranq_darts{pixel_x = -12; pixel_y = 4},/obj/item/ammo/bullets/tranq_darts{pixel_x = -7; pixel_y = 4},/obj/item/reagent_containers/syringe/haloperidol{pixel_x = -7; pixel_y = -4},/obj/item/reagent_containers/syringe/haloperidol{pixel_x = 0; pixel_y = -4},/obj/item/reagent_containers/syringe/haloperidol{pixel_x = 8; pixel_y = -4},/obj/item/ammo/bullets/tranq_darts/anti_mutant{pixel_x = 10; pixel_y = 4},/obj/item/ammo/bullets/tranq_darts/anti_mutant{pixel_x = 5; pixel_y = 4},/obj/item/ammo/bullets/tranq_darts{pixel_x = -7; pixel_y = 4},/obj/item/ammo/bullets/tranq_darts{pixel_x = -12; pixel_y = 4},/obj/item/ammo/bullets/tranq_darts/anti_mutant{pixel_x = 5; pixel_y = 4},/obj/item/ammo/bullets/tranq_darts/anti_mutant{pixel_x = 10; pixel_y = 4},/obj/item/gun/kinetic/dart_rifle{pixel_x = 2; pixel_y = 10},/turf/simulated/floor/engine,/area/station/ai_monitored/armory)
 "fK" = (/obj/machinery/power/apc/autoname_west,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/bot/white,/area/station/hangar/sec)
@@ -307,9 +310,9 @@
 "hB" = (/turf/simulated/floor/carpet/blue/fancy/innercorner{dir = 6},/area/station/medical/head)
 "hC" = (/obj/wingrille_spawn/reinforced/full,/obj/window_blinds/cog2/middle{dir = 5},/turf/simulated/floor/plating,/area/station/medical/head)
 "hD" = (/turf/simulated/floor/blueblack{dir = 1},/area/station/hallway)
-"hG" = (/obj/machinery/pathogen_manipulator,/turf/simulated/floor/white,/area)
 "hL" = (/obj/wingrille_spawn/reinforced/full,/turf/simulated/floor/plating,/area/station/maintenance/inner/west)
 "hM" = (/obj/grille/catwalk{dir = 4},/obj/cable,/obj/cable{icon_state = "0-2"; d2 = 2},/obj/cable{icon_state = "0-4"; d2 = 4},/obj/cable{d2 = 8; icon_state = "0-8"},/turf/space,/turf/simulated/floor/airless/plating/catwalk{dir = 8},/area/station/maintenance/westsolar)
+"hN" = (/obj/iv_stand,/turf/simulated/floor/greenwhite{dir = 2},/area)
 "hO" = (/obj/shrub{dir = 1; icon = 'icons/obj/stationobjs.dmi'; icon_state = "plant"},/obj/decal/tile_edge/line/purple{dir = 9; icon_state = "line2"},/turf/simulated/floor/black,/area/station/science)
 "hP" = (/obj/decal/tile_edge/line/black{dir = 2; icon_state = "tile1"},/obj/submachine/ATM{pixel_x = 32; pixel_y = 0},/obj/decal/tile_edge/line/black{dir = 5; icon_state = "tile1"},/turf/simulated/floor/grime,/area/station/security/brig/south_side)
 "hQ" = (/obj/machinery/atmospherics/pipe/manifold/overfloor/south{dir = 1},/turf/simulated/floor,/area/station/hangar/science)
@@ -339,7 +342,6 @@
 "iv" = (/turf/simulated/floor/carpet/purple/fancy/edge{dir = 8},/area/station/crew_quarters/hor)
 "iw" = (/obj/table/auto,/obj/machinery/light/emergency{dir = 4},/obj/window/reinforced/west{dir = 1},/obj/random_item_spawner/tableware,/obj/random_item_spawner/tableware,/turf/simulated/floor/wood/two,/area/station/bridge)
 "ix" = (/obj/decal/tile_edge/line/red{dir = 4; icon_state = "line1"},/turf/simulated/floor,/area/station/ai_monitored/armory)
-"iy" = (/obj/machinery/synthomatic,/turf/simulated/floor/white,/area)
 "iB" = (/obj/decal/tile_edge/stripe/extra_big{dir = 2},/turf/simulated/floor/purple/side,/area/station/hallway)
 "iC" = (/obj/shrub{dir = 9; icon_state = "shrub"},/obj/disposalpipe/segment{dir = 8},/turf/simulated/floor/circuit,/area/station/bridge)
 "iD" = (/obj/stool/chair/comfy/blue{dir = 8},/obj/machinery/recharger/wall{dir = 2; pixel_x = -1; pixel_y = -18},/turf/simulated/floor/carpet/green/fancy/edge,/area/station/bridge/captain)
@@ -355,6 +357,7 @@
 "iO" = (/obj/stool/chair/office/blue{dir = 2; icon_state = "office_chair_blue"},/turf/simulated/floor/carpet/blue/fancy/innercorner,/area/station/medical/head)
 "iP" = (/obj/machinery/atmospherics/pipe/tank{dir = 4},/turf/simulated/floor/plating/jen,/area/station/science/lab)
 "iQ" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/machinery/conveyor{dir = 4; id = "toxins_o2"; operating = 1},/obj/machinery/firealarm{dir = 8; pixel_x = -24; pixel_y = -1},/turf/simulated/floor/plating/jen,/area/station/science/lab)
+"iS" = (/turf/unsimulated/floor/greenwhite/corner,/area)
 "iT" = (/obj/shrub{dir = 8; icon_state = "shrub"},/turf/simulated/floor/redblack{dir = 1},/area/station/hallway)
 "iU" = (/turf/simulated/floor/purple/corner,/area/station/hallway)
 "iV" = (/turf/simulated/floor/carpet/green/standard/edge{dir = 10},/area/station/science)
@@ -395,6 +398,7 @@
 "jZ" = (/obj/wingrille_spawn/reinforced_crystal/full,/obj/machinery/atmospherics/pipe/manifold{icon_state = "manifold"; dir = 4; level = 2},/turf/simulated/floor/plating,/area/station/science/lab)
 "kd" = (/obj/lattice,/obj/grille/steel,/turf/space,/area)
 "ke" = (/obj/machinery/power/apc/autoname_east,/turf/simulated/floor/carpet/grime,/area/station/security/brig/solitary)
+"kf" = (/turf/unsimulated/floor/greenwhite/corner{dir = 8},/area)
 "kg" = (/turf/simulated/wall/auto/reinforced/supernorn,/area/station/medical/head)
 "kh" = (/turf/simulated/wall/auto/reinforced/supernorn,/area/station/medical/medbay/surgery/storage)
 "kj" = (/turf/simulated/floor/redblack{dir = 2},/area/station/security/main)
@@ -620,6 +624,7 @@
 "pU" = (/obj/machinery/door/poddoor/blast/pyro{dir = 8; doordir = "left"; icon_base = "bdoor"; icon_state = "bdoorleft0"; id = "telesci_public"; name = "Telesci Blast Shield"},/obj/wingrille_spawn/reinforced_crystal/full,/turf/simulated/floor/engine{allows_vehicles = 0},/area/station/science/teleporter)
 "pV" = (/turf/space,/turf/simulated/shuttle/wall/cockpit{dir = 8},/area)
 "pW" = (/turf/simulated/floor/carpet{dir = 4; icon_state = "fblue6"},/area/station/crew_quarters/courtroom)
+"pX" = (/obj/machinery/optable,/obj/decal/mule/beacon/no_auto_dropoff_spawn,/turf/simulated/floor/greenwhite{dir = 2},/area)
 "pY" = (/obj/decal/tile_edge/line/white{dir = 8; icon_state = "line1"},/obj/machinery/firealarm{dir = 1; layer = 3.5; pixel_y = -24},/turf/simulated/floor/redblack{dir = 2},/area/station/security/main)
 "pZ" = (/obj/lattice{icon_state = "lattice-dir"; dir = 8},/turf/space,/area)
 "qb" = (/turf/simulated/floor/carpet/blue/fancy/innercorner{dir = 8},/area/station/medical/head)
@@ -627,6 +632,7 @@
 "qd" = (/obj/grille/catwalk{dir = 2; icon_state = "catwalk_cross"},/obj/cable{icon_state = "4-8"},/turf/space,/turf/simulated/floor/airless/plating/catwalk{dir = 5; icon_state = "catwalk_cross"; layer = 2},/area/station/maintenance/westsolar)
 "qe" = (/obj/machinery/light/emergency{dir = 1},/turf/simulated/floor/black,/area/station/crew_quarters/heads)
 "qg" = (/turf/simulated/floor,/area/station/ai_monitored/armory)
+"qh" = (/obj/decal/tile_edge/line/green{dir = 9; icon_state = "line2"},/turf/simulated/floor/white,/area)
 "qi" = (/obj/securearea{desc = "A warning sign which reads 'EXTERNAL AIRLOCK'"; icon_state = "space"; layer = 2.5; name = "VACUUM AREA"; pixel_x = 0},/turf/simulated/wall/r_wall,/area/station/hangar/science)
 "ql" = (/obj/decal/tile_edge/stripe/extra_big{dir = 1},/turf/simulated/floor/shuttlebay{name = "test chamber plating"},/area/station/testchamber)
 "qn" = (/obj/decal/sink{dir = 4},/turf/simulated/floor/shuttlebay{name = "test chamber plating"},/area/station/testchamber)
@@ -747,6 +753,7 @@
 "th" = (/obj/grille/catwalk/jen,/obj/decal/tile_edge/stripe{dir = 8},/obj/decal/tile_edge/stripe{dir = 4},/obj/decal/cleanable/dirt/jen,/turf/simulated/floor/plating/jen,/area/station/maintenance/inner/west)
 "tj" = (/turf/simulated/floor/blue/side,/area/station/hallway)
 "tl" = (/obj/machinery/guardbot_dock,/obj/decal/mule/beacon/no_auto_dropoff_spawn,/obj/machinery/power/data_terminal,/turf/simulated/floor/circuit/purple,/area/station/science/bot_storage)
+"tm" = (/obj/decal/tile_edge/line/green{dir = 5; icon_state = "line2"},/turf/simulated/floor/white,/area)
 "tn" = (/obj/storage/crate,/obj/item/crowbar{pixel_x = -9; pixel_y = 4},/obj/item/crowbar{pixel_x = -4; pixel_y = 4},/obj/item/crowbar{pixel_x = 1; pixel_y = 4},/obj/item/crowbar{pixel_x = 6; pixel_y = 4},/obj/item/crowbar{pixel_x = 11; pixel_y = 4},/turf/simulated/floor/carpet{dir = 2; icon_state = "fred2"},/area/station/security/quarters)
 "tq" = (/obj/table/auto,/obj/item/storage/toolbox/mechanical{pixel_x = 0; pixel_y = 8},/obj/item/storage/toolbox/mechanical{pixel_x = 0; pixel_y = -2},/turf/simulated/floor,/area/station/hangar/science)
 "tr" = (/obj/table/reinforced/auto,/obj/item/bloodslide{pixel_x = 6; pixel_y = 10},/obj/item/bloodslide{pixel_x = 6; pixel_y = 7},/obj/item/bloodslide{pixel_x = 6; pixel_y = 4},/obj/item/bloodslide{pixel_x = 6; pixel_y = 1},/turf/simulated/floor/plating/jen,/area)
@@ -880,7 +887,6 @@
 "wF" = (/obj/decal/tile_edge/line/purple{dir = 10; icon_state = "tile1"},/turf/simulated/floor/white,/area/station/science/teleporter)
 "wG" = (/turf/simulated/wall/r_wall,/area/station/maintenance/inner/west)
 "wH" = (/obj/table/auto,/obj/item/screwdriver{pixel_x = 10; pixel_y = 6},/obj/item/screwdriver{pixel_x = 5; pixel_y = 5},/obj/item/storage/toolbox/mechanical{pixel_x = -10; pixel_y = 10},/obj/item/storage/toolbox/mechanical{pixel_x = -10; pixel_y = 4},/turf/simulated/floor/plating/jen,/area/station/science/lab)
-"wI" = (/obj/machinery/autoclave,/turf/simulated/floor/white,/area)
 "wK" = (/obj/grille/catwalk/jen,/turf/simulated/floor/plating/jen,/area/station/maintenance/outer/nw)
 "wN" = (/obj/cable{icon_state = "1-2"},/obj/wingrille_spawn/reinforced/full,/turf/simulated/floor/plating,/area/station/maintenance/westsolar)
 "wP" = (/obj/machinery/light{dir = 2; icon_state = "tube1"},/turf/simulated/floor/redblack{dir = 2},/area/station/crew_quarters/courtroom)
@@ -895,7 +901,6 @@
 "xa" = (/turf/simulated/floor/bluewhite/corner{dir = 8},/area/station/medical/medbay)
 "xb" = (/obj/wingrille_spawn/reinforced_crystal/full,/turf/simulated/floor/plating,/area/station/chemistry)
 "xc" = (/obj/decal/tile_edge/line/red{icon_state = "line3"},/obj/table/auto,/obj/item/circular_saw{pixel_x = 0; pixel_y = -5},/obj/item/scalpel{pixel_x = -1; pixel_y = 4},/obj/item/suture{pixel_x = 0; pixel_y = 8},/obj/item/hemostat{pixel_x = -1; pixel_y = 3},/turf/simulated/floor/blackwhite/side{dir = 4},/area/station/medical/medbay/treatment)
-"xd" = (/obj/machinery/optable,/turf/simulated/floor/white,/area)
 "xe" = (/obj/decal/poster/wallsign/stencil/right/t{pixel_x = -5; pixel_y = 43},/obj/decal/poster/wallsign/stencil/right/y{pixel_x = 6; pixel_y = 43},/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/redblack{dir = 1},/area/station/security/main)
 "xf" = (/turf/simulated/floor/specialroom/arcade,/area/station/science)
 "xg" = (/obj/grille/catwalk/jen,/turf/simulated/floor/plating/jen,/area/station/medical/research{name = "Genetic Research"})
@@ -987,6 +992,7 @@
 "zs" = (/obj/decal/cleanable/fungus{pixel_x = -1; pixel_y = 32},/obj/decal/tile_edge/line/grey{dir = 1; icon_state = "tile1"},/turf/simulated/floor/black/grime,/area/station/security/brig/north_side)
 "zv" = (/obj/wingrille_spawn/reinforced/full,/turf/simulated/floor/plating,/area/station/maintenance/westsolar)
 "zw" = (/turf/simulated/floor/black,/area/station/medical/research{name = "Genetic Research"})
+"zx" = (/obj/airbridge_controler{id = "aftstarboard"; primary_controller = 1; tunnel_width = 2},/turf/space,/area)
 "zA" = (/obj/wingrille_spawn/reinforced/full,/obj/window_blinds/cog2/right{dir = 2},/turf/simulated/floor/plating,/area/station/medical/head)
 "zB" = (/obj/rack,/obj/item/tank/air,/obj/item/clothing/suit/space/emerg{pixel_x = -2; pixel_y = -3},/obj/item/clothing/head/emerg{pixel_x = 1; pixel_y = 10},/obj/item/clothing/mask/breath{pixel_x = 1; pixel_y = 4},/obj/item/crowbar{pixel_x = 4; pixel_y = -2},/obj/decal/tile_edge/line/purple{dir = 4; icon_state = "tile1"},/obj/decal/tile_edge/line/purple{dir = 9; icon_state = "tile1"},/turf/simulated/floor/white,/area/station/science/teleporter)
 "zC" = (/obj/machinery/recharger/wall{dir = 1; pixel_x = 1; pixel_y = 20},/obj/decal/tile_edge/stripe/extra_big{dir = 8},/obj/stool,/turf/simulated/floor,/area/station/ai_monitored/armory)
@@ -1059,6 +1065,7 @@
 "Bo" = (/obj/machinery/camera{c_tag = "autotag"; dir = 4; icon_state = "camera"; name = "autoname - SS13"; tag = ""},/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/red/side{dir = 8},/area/station/security/main)
 "Bq" = (/obj/machinery/camera{c_tag = "autotag"; dir = 1; icon_state = "camera"; name = "autoname - SS13"; tag = ""},/obj/machinery/light{dir = 2; icon_state = "tube1"},/turf/simulated/floor/carpet{dir = 2; icon_state = "fblue6"},/area/station/bridge)
 "Br" = (/obj/machinery/camera/television{c_tag = "test chamber"; dir = 8; name = "camera - test chamber"},/turf/simulated/floor/shuttlebay{name = "test chamber plating"},/area/station/testchamber)
+"Bv" = (/turf/unsimulated/floor/greenwhite/corner{dir = 1},/area)
 "Bw" = (/obj/decal/tile_edge/stripe{dir = 4},/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/turf/simulated/floor/black,/area/station/security/brig/south_side)
 "By" = (/turf/simulated/floor/redblack{dir = 1},/area/station/hallway)
 "Bz" = (/obj/storage/secure/closet/medical{name = "Spare Handicap Equipment"},/obj/item/clothing/glasses/visor{pixel_x = 1; pixel_y = 11},/obj/item/clothing/glasses/visor{pixel_x = 1; pixel_y = 6},/obj/item/device/radio/headset/deaf{pixel_x = -5; pixel_y = -7},/obj/item/device/radio/headset/deaf{pixel_x = 9; pixel_y = -7},/obj/machinery/light{dir = 1},/turf/simulated/floor/carpet{dir = 1; icon_state = "fblue3"},/area/station/medical/head)
@@ -1118,6 +1125,7 @@
 "CW" = (/obj/decal/cleanable/rust/jen,/obj/decal/cleanable/dirt/jen,/turf/simulated/floor/plating/jen,/area/station/maintenance/inner/sw)
 "CZ" = (/turf/simulated/floor/carpet/red/standard/edge{dir = 10},/area/station/hallway)
 "Da" = (/obj/machinery/light/emergency,/obj/machinery/firealarm{pixel_x = 1; pixel_y = -25},/turf/simulated/floor/blue,/area/station/medical/medbay/treatment)
+"Db" = (/obj/item/storage/wall/emergency{dir = 1; icon_state = "miniO2"; pixel_y = 32},/turf/simulated/floor/greenwhite{dir = 5},/area)
 "Dc" = (/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/obj/decal/tile_edge/stripe/big,/turf/simulated/floor/grey,/area/station/science/artifact)
 "De" = (/obj/table/reinforced/auto,/obj/machinery/computer3/generic/personal,/turf/simulated/floor/specialroom/arcade,/area/station/science)
 "Df" = (/obj/machinery/vending/medical_public,/turf/simulated/floor/white/checker,/area/station/medical)
@@ -1150,7 +1158,6 @@
 "DS" = (/obj/lattice{icon_state = "lattice-dir"; dir = 10},/turf/space,/area/station/science)
 "DU" = (/obj/decal/tile_edge/line/black{dir = 6; icon_state = "line1"},/turf/simulated/floor,/area/station/security/main)
 "DV" = (/obj/machinery/computer3/terminal/zeta{dir = 8; setup_os_string = "ZETA_MAINFRAME"},/turf/simulated/floor/plating/jen,/area/station/science/gen_storage)
-"DW" = (/obj/machinery/centrifuge,/turf/simulated/floor/white,/area)
 "DX" = (/obj/machinery/atmospherics/pipe/manifold{dir = 4; icon_state = "manifold"; level = 2},/turf/simulated/wall/r_wall,/area/station/science/lab)
 "DY" = (/obj/machinery/door/airlock/pyro/maintenance,/obj/access_spawn/maint,/obj/firedoor_spawn,/obj/decal/mule/dropoff,/turf/simulated/floor/plating,/area/station/maintenance/inner/south)
 "Ea" = (/turf/simulated/floor/stairs/medical/wide/other{dir = 2},/area)
@@ -1159,6 +1166,7 @@
 "Ed" = (/obj/cable{icon_state = "1-2"; d1 = 1; d2 = 2},/obj/decal/cleanable/dirt,/obj/grille/catwalk/jen,/obj/decal/tile_edge/stripe{dir = 8},/obj/decal/tile_edge/stripe{dir = 4},/turf/simulated/floor/plating/jen,/area/station/maintenance/outer/nw)
 "Ee" = (/obj/window/reinforced/west,/obj/table/wood/round/auto,/obj/item/device/radio/intercom/science{pixel_x = 0; pixel_y = 0},/turf/simulated/floor/black,/area/station/bridge)
 "Ef" = (/turf/simulated/floor/carpet{icon_state = "fred1"; dir = 2},/area/station/security/hos)
+"Eg" = (/turf/unsimulated/floor/greenwhite/corner{dir = 4},/area)
 "Eh" = (/obj/machinery/vehicle/pod_smooth/heavy,/turf/simulated/floor/shuttlebay,/area/station/hangar/sec)
 "Ei" = (/obj/table/wood/auto,/obj/machinery/recharger{pixel_y = 3},/obj/decal/tile_edge/line/purple{dir = 1; icon_state = "line1"},/turf/simulated/floor/black,/area/station/crew_quarters/hor)
 "Ej" = (/obj/stool/bed,/obj/item/clothing/suit/bedsheet{bcolor = "red"; icon_state = "bedsheet-red"},/obj/landmark/start{name = "Security Officer"},/turf/simulated/floor/carpet{dir = 9; icon_state = "fred2"},/area/station/security/quarters)
@@ -1173,6 +1181,7 @@
 "Ew" = (/turf/simulated/floor/carpet/green/standard/edge{dir = 9},/area/station/science)
 "Ex" = (/obj/grille/catwalk/jen,/obj/decal/tile_edge/stripe{dir = 8},/obj/decal/tile_edge/stripe{dir = 4},/turf/simulated/floor/plating/jen,/area)
 "Ey" = (/obj/decal/cleanable/dirt/jen,/turf/simulated/floor/stairs/dark,/area/station/maintenance/inner/sw)
+"Ez" = (/obj/machinery/pathogen_manipulator,/turf/simulated/floor/green,/area)
 "EA" = (/turf/simulated/floor/redwhite{dir = 6},/area/station/security/checkpoint/west)
 "EC" = (/obj/decal/tile_edge/line/purple{dir = 4; icon_state = "line1"},/turf/simulated/floor/black,/area/station/chemistry)
 "EE" = (/turf/simulated/wall/r_wall,/area/station/science/artifact)
@@ -1224,12 +1233,14 @@
 "FU" = (/obj/machinery/computer/ordercomp,/turf/simulated/floor/grey/side{dir = 1},/area/station/hangar/science)
 "FV" = (/obj/stool/chair/comfy/blue{dir = 4},/turf/simulated/floor/carpet/red/fancy/narrow{dir = 8},/area/station/crew_quarters/heads)
 "FW" = (/obj/table/reinforced/auto,/turf/simulated/floor/black,/area/station/crew_quarters/courtroom)
+"FX" = (/obj/storage/secure/closet/fridge/pathology{req_access_txt = "5"},/obj/item/reagent_containers/food/snacks/agar_block,/obj/item/reagent_containers/food/snacks/yuck,/turf/simulated/floor/green,/area)
 "FY" = (/turf/simulated/floor/stairs/jen/wide/other{dir = 1},/turf/simulated/floor/stairs/wide/other{dir = 1},/area/station/science/lab)
 "FZ" = (/obj/table/reinforced/auto,/obj/machinery/cashreg{pixel_x = 0; pixel_y = 10},/obj/machinery/door/window/eastright,/obj/access_spawn/security,/obj/firedoor_spawn,/turf/simulated/floor/red/side{dir = 8},/area/station/security/checkpoint/west)
 "Ga" = (/turf/simulated/floor/carpet/red/decal/innercross,/area/station/security/hos)
 "Gb" = (/obj/table/auto,/obj/item/storage/toolbox/emergency,/turf/simulated/floor/blue,/area/station/medical/medbay/surgery/storage)
 "Gc" = (/obj/decal/tile_edge/stripe/extra_big{dir = 2},/turf/simulated/floor/shuttlebay,/area/station/hangar/sec)
 "Gd" = (/obj/window/reinforced/north,/obj/window/reinforced/east,/turf/space,/area)
+"Ge" = (/obj/decal/tile_edge/line/green{dir = 6; icon_state = "line2"},/turf/simulated/floor/white,/area)
 "Gf" = (/obj/table/auto,/obj/item/device/gps{pixel_x = -11; pixel_y = -4},/obj/item/device/gps{pixel_x = 9; pixel_y = -4},/obj/item/device/gps{pixel_x = -1; pixel_y = -4},/obj/item/camera_test{pixel_x = 0; pixel_y = 11},/turf/simulated/floor/white,/area/station/science/teleporter)
 "Gg" = (/obj/machinery/door/airlock/pyro/maintenance{dir = 4},/obj/access_spawn/maint,/obj/firedoor_spawn,/obj/decal/mule/dropoff,/turf/simulated/floor/plating/jen,/area/station/maintenance/inner/west)
 "Gh" = (/obj/item/reagent_containers/food/snacks/beefood{pixel_x = 6; pixel_y = -6},/obj/item/reagent_containers/food/snacks/beefood{desc = "A little birthday cupcake for Heisenbee.  May not taste good to non-bees."; icon = 'icons/obj/foodNdrink/food_dessert.dmi'; icon_state = "cupcake"; name = "Heisenbee's birthday cupcake"; pixel_x = 9; pixel_y = 9},/turf/simulated/floor/carpet/purple/fancy/edge{dir = 5},/area/station/crew_quarters/hor)
@@ -1271,6 +1282,7 @@
 "Hb" = (/obj/wingrille_spawn/reinforced/full,/turf/simulated/floor/airless/plating,/area/station/hallway)
 "Hc" = (/obj/machinery/disposal/mail/small/autoname/bridge/east,/turf/simulated/floor/black,/area/station/bridge)
 "Hd" = (/obj/machinery/camera/television{c_tag = "security 1"; dir = 8; name = "camera - interrogation room"},/turf/simulated/floor/redblack{dir = 6},/area/station/security/interrogation)
+"He" = (/obj/machinery/autoclave,/turf/simulated/floor/green,/area)
 "Hf" = (/turf/simulated/wall,/area/station/medical/breakroom)
 "Hg" = (/turf/simulated/floor/airless/blue/checker,/area/station/medical/medbay/treatment)
 "Hj" = (/turf/simulated/floor/carpet{dir = 1; icon_state = "fblue6"},/area/station/crew_quarters/courtroom)
@@ -1319,6 +1331,7 @@
 "In" = (/obj/decal/tile_edge/line/green{dir = 8; icon_state = "line1"},/turf/simulated/floor/white,/area/station/medical/medbay/cloner)
 "Io" = (/obj/machinery/chem_dispenser/soda,/obj/machinery/light/emergency{dir = 1},/turf/simulated/floor/blueblack{dir = 1},/area/station/bridge)
 "Ir" = (/turf/simulated/floor/red/side{dir = 8},/area/station/hallway)
+"Is" = (/obj/machinery/centrifuge,/turf/simulated/floor/green,/area)
 "Iu" = (/obj/decal/cleanable/dirt/jen,/obj/machinery/power/apc/autoname_south,/turf/simulated/floor/plating/jen,/area/station/science/gen_storage)
 "Iw" = (/obj/machinery/door/airlock/pyro/glass{dir = 4},/obj/decal/mule/dropoff,/obj/firedoor_spawn,/obj/access_spawn/medlab,/turf/simulated/floor,/area/station/medical/research{name = "Genetic Research"})
 "Iz" = (/obj/machinery/disposal/small{dir = 4},/turf/simulated/floor/specialroom/medbay{dir = 2},/area/station/medical)
@@ -1419,6 +1432,7 @@
 "KY" = (/turf/simulated/floor/specialroom/freezer,/area/station/medical/morgue)
 "KZ" = (/obj/table/reinforced/auto,/turf/simulated/floor/carpet/red/fancy/edge{dir = 1},/area/station/security/hos)
 "La" = (/obj/machinery/portable_atmospherics/canister/carbon_dioxide,/obj/decal/mule/beacon/no_auto_dropoff_spawn,/turf/simulated/floor/plating/jen,/area/station/science/lab)
+"Lc" = (/obj/machinery/computer/pathology{dir = 4},/turf/simulated/floor/green,/area)
 "Ld" = (/obj/table/auto,/obj/machinery/networked/printer{print_id = "Bridge"},/turf/simulated/floor/blueblack{dir = 2},/area/station/bridge)
 "Le" = (/obj/lattice{dir = 2; icon_state = "lattice-dir"},/turf/space,/area)
 "Lg" = (/obj/machinery/sleep_console{dir = 4},/turf/simulated/floor/white/checker,/area/station/medical)
@@ -1432,6 +1446,7 @@
 "Lr" = (/obj/window/reinforced/south,/obj/decal/cleanable/dirt/jen,/turf/simulated/floor/plating,/area/station/maintenance/inner/sw)
 "Ls" = (/obj/machinery/door/airlock/gannets/glass/chemistry,/obj/firedoor_spawn,/obj/decal/mule/dropoff,/obj/access_spawn/research,/turf/simulated/floor/specialroom/arcade,/area/station/science)
 "Lt" = (/turf/simulated/wall/auto/reinforced/supernorn,/area/station/medical/medbay/treatment)
+"Lw" = (/turf/simulated/floor/greenwhite{dir = 6},/area)
 "Lx" = (/obj/submachine/cargopad{name = "Robotics Workshop Pad"},/turf/simulated/floor/circuit/off,/area/station/medical/robotics)
 "Ly" = (/obj/decal/poster/wallsign/poster_nt{pixel_x = 0; pixel_y = 31},/turf/simulated/floor/airless/neutral/side{dir = 1},/area/station/hallway)
 "Lz" = (/obj/machinery/networked/storage/tape_drive{bank_id = "Artlab"; locked = 0; setup_drive_type = /obj/item/disk/data/tape/artifact_research; setup_spawn_with_tape = 1},/obj/cable{d2 = 8; icon_state = "0-8"},/obj/machinery/power/data_terminal,/turf/simulated/floor/specialroom/arcade,/area/station/science/artifact)
@@ -1524,6 +1539,7 @@
 "NO" = (/obj/machinery/door_control{id = "hangar_artlab"; name = "Science Hangar Door Control"; pixel_x = 24; pixel_y = -1},/obj/machinery/atmospherics/pipe/simple/overfloor/northeast{dir = 10},/turf/simulated/floor,/area/station/hangar/science)
 "NP" = (/obj/cable{icon_state = "4-8"; d1 = 4; d2 = 8},/obj/decal/tile_edge/stripe/extra_big{dir = 8},/turf/simulated/floor/specialroom/arcade,/area/station/science/artifact)
 "NS" = (/obj/submachine/chef_sink/chem_sink{dir = 4},/turf/simulated/floor/shuttlebay{name = "reinforced plating"},/area/station/chemistry)
+"NT" = (/obj/decal/tile_edge/line/green{icon_state = "line1"},/turf/simulated/floor/white,/area)
 "NU" = (/obj/machinery/atmospherics/pipe/simple/color_pipe/yellow_pipe/vertical,/turf/unsimulated/floor/white,/area/station/security/brig/north_side)
 "NV" = (/obj/machinery/door/airlock/pyro/glass{dir = 2; icon_state = "glass_locked"; locked = 1},/obj/access_spawn/research,/obj/firedoor_spawn,/obj/decal/mule/dropoff,/turf/simulated/floor/plating/jen,/area/station/science/lab)
 "NW" = (/turf/space,/area/station/crew_quarters/fitness)
@@ -1537,6 +1553,7 @@
 "Of" = (/obj/machinery/portable_atmospherics/canister/empty,/obj/decal/mule/beacon/no_auto_dropoff_spawn,/turf/simulated/floor/plating/jen,/area/station/science/lab)
 "Og" = (/obj/machinery/portable_atmospherics/canister/toxins,/obj/machinery/firealarm{dir = 8; pixel_x = -24; pixel_y = -1},/turf/simulated/floor/plating/jen,/area/station/science/lab)
 "Oi" = (/obj/machinery/manufacturer/robotics,/turf/simulated/floor/blueblack{dir = 4},/area/station/medical/robotics)
+"Oj" = (/turf/simulated/floor/greenwhite{dir = 1},/area)
 "Ok" = (/obj/grille/catwalk/jen,/obj/decal/tile_edge/stripe{dir = 8},/obj/decal/tile_edge/stripe{dir = 4},/obj/decal/cleanable/dirt/jen,/turf/simulated/floor/plating/jen,/area/station/maintenance/inner/south)
 "Ol" = (/obj/table/wood/round/auto,/obj/item/paper_bin{pixel_x = -7; pixel_y = 8},/obj/item/pen{pixel_x = 6; pixel_y = 7},/obj/item/stamp{pixel_x = 4; pixel_y = -4},/turf/simulated/floor/carpet/blue/decal{dir = 8},/area/station/crew_quarters/courtroom)
 "Om" = (/turf/simulated/floor/grass,/area/station/medical/dome)
@@ -1706,6 +1723,7 @@
 "SL" = (/obj/stool/chair/office{dir = 1; icon_state = "office_chair"},/turf/simulated/floor/specialroom/freezer,/area/station/medical/morgue)
 "SM" = (/obj/wingrille_spawn/reinforced_crystal/full,/obj/machinery/door/poddoor/pyro{density = 0; icon_state = "pdoor0"; id = "lockdown"; name = "Bridge Lockdown Doors"; opacity = 0},/turf/simulated/floor/plating,/area/station/bridge/captain)
 "SO" = (/obj/cable{icon_state = "2-4"; d1 = 2; d2 = 4},/turf/simulated/floor/plating,/area/station/maintenance/westsolar)
+"SP" = (/turf/simulated/floor/greenwhite{dir = 10},/area)
 "SR" = (/obj/wingrille_spawn/reinforced/full,/obj/machinery/door/poddoor/pyro{density = 0; icon_state = "pdoor0"; id = "lockdown"; name = "Bridge Lockdown Doors"; opacity = 0},/turf/simulated/floor/plating,/area/station/bridge)
 "SS" = (/obj/machinery/door/airlock/pyro/glass{dir = 4},/obj/access_spawn/brig,/obj/firedoor_spawn,/turf/simulated/floor/black,/area/station/security/brig/solitary)
 "ST" = (/obj/machinery/door/airlock/pyro/command{dir = 4},/obj/access_spawn/head_of_personnel,/obj/firedoor_spawn,/obj/decal/mule/dropoff,/turf/simulated/floor/black,/area/station/crew_quarters/heads)
@@ -1816,7 +1834,6 @@
 "Vx" = (/turf/simulated/floor/plating,/area/station/medical/research{name = "Genetic Research"})
 "Vy" = (/obj/decal/tile_edge/stripe/extra_big{dir = 4},/obj/machinery/firealarm{pixel_x = 1; pixel_y = -26},/turf/simulated/floor/shuttlebay,/area/station/hangar/sec)
 "Vz" = (/turf/simulated/floor/purpleblack{dir = 5},/area/station/science)
-"VA" = (/obj/machinery/vending/pathology,/turf/simulated/floor/white,/area)
 "VB" = (/obj/machinery/drainage,/turf/simulated/floor/black,/area/station/medical/research{name = "Genetic Research"})
 "VC" = (/obj/grille/catwalk/jen,/obj/decal/cleanable/dirt/jen,/turf/simulated/floor/plating/jen,/area/station/maintenance/inner/sw)
 "VD" = (/obj/machinery/door/airlock/gannets/glass/medical,/obj/firedoor_spawn,/obj/decal/mule/dropoff,/turf/simulated/floor/white/checker,/area/station/medical)
@@ -1846,6 +1863,7 @@
 "Wl" = (/obj/machinery/light/small/floor,/turf/simulated/floor/blueblack/corner{dir = 4},/area/station/bridge)
 "Wm" = (/obj/item/device/audio_log/wall_mounted{anchored = 1; max_lines = 350; mode = 1; name = "Test Chamber Recorder"; pixel_x = 25; pixel_y = -6},/turf/simulated/floor/shuttlebay{name = "test chamber plating"},/area/station/testchamber)
 "Wn" = (/obj/machinery/power/smes{charge = 2e+007; chargelevel = 15000; output = 10000},/obj/cable{icon_state = "0-4"; d2 = 4},/turf/simulated/floor/plating,/area/station/maintenance/westsolar)
+"Wq" = (/obj/machinery/chem_dispenser,/turf/simulated/floor/green,/area)
 "Wr" = (/turf/simulated/floor/carpet/green/standard/edge{dir = 8},/area/station/science)
 "Ws" = (/obj/decal/poster/wallsign/stencil/right/d{pixel_x = -12; pixel_y = 34},/obj/decal/poster/wallsign/stencil/right/e{pixel_x = 1; pixel_y = 34},/obj/decal/tile_edge/line/grey{dir = 1; icon_state = "tile1"},/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/black/grime,/area/station/security/brig/north_side)
 "Wt" = (/obj/warp_beacon{name = "Science Hangar Beacon"},/obj/lattice,/turf/space,/area)
@@ -1858,11 +1876,13 @@
 "WC" = (/obj/decal/poster/wallsign/medbay_right{pixel_x = 0; pixel_y = 33},/turf/simulated/floor/blue/side{dir = 1},/area/station/hallway)
 "WF" = (/obj/machinery/door/window/southleft{dir = 4; pixel_y = 0; req_access_txt = "20"},/turf/simulated/floor/carpet/green/fancy/edge{dir = 4},/area/station/bridge/captain)
 "WG" = (/obj/machinery/networked/test_apparatus/heater,/obj/decal/mule/beacon/no_auto_dropoff_spawn,/obj/machinery/power/data_terminal,/obj/cable,/turf/simulated/floor/grey,/area/station/science/artifact)
+"WI" = (/obj/submachine/chef_sink/chem_sink{pixel_x = 0; pixel_y = 11},/turf/simulated/floor/greenwhite{dir = 9},/area)
 "WJ" = (/obj/overlay{anchored = 1; icon = 'icons/misc/beach2.dmi'; icon_state = "palm1"; layer = 10; name = "palm tree"},/turf/simulated/floor/grass,/area/station/medical/dome)
 "WK" = (/turf/simulated/wall/r_wall,/area/station/chemistry)
 "WM" = (/obj/machinery/networked/secdetector{area_access = 99; detector_id = "AI Core"; dir = 8},/obj/wingrille_spawn/reinforced/full,/turf/simulated/floor/plating/airless,/area/station/ai_monitored/armory)
 "WN" = (/turf/simulated/floor/stairs/wide/other{dir = 4},/area/station/bridge)
 "WO" = (/obj/decal/cleanable/dirt/jen,/obj/decal/cleanable/rust/jen,/obj/grille/catwalk/jen,/obj/decal/tile_edge/stripe{dir = 10},/turf/simulated/floor/plating/jen,/area/station/maintenance/inner/sw)
+"WP" = (/obj/machinery/synthomatic,/turf/simulated/floor/green,/area)
 "WT" = (/turf/simulated/floor/airless/plating,/area/station/maintenance/outer/sw)
 "WU" = (/turf/space,/area/station/maintenance/inner/ne)
 "WV" = (/turf/simulated/floor/plating/jen,/area/station/maintenance/outer/nw)
@@ -1887,6 +1907,7 @@
 "Xs" = (/obj/machinery/firealarm{dir = 1; pixel_x = -1; pixel_y = 26},/turf/simulated/floor/carpet/purple/fancy/narrow{dir = 5},/area/station/crew_quarters/hor)
 "Xv" = (/turf/simulated/floor/airless/plating,/area/station/maintenance/inner/nw)
 "Xy" = (/obj/machinery/atmospherics/valve{dir = 4; name = "purge valve"},/turf/simulated/floor/plating/jen,/area/station/science/lab)
+"XC" = (/obj/machinery/vending/pathology,/turf/simulated/floor/green,/area)
 "XD" = (/obj/machinery/light/emergency{dir = 2},/turf/simulated/floor/red/side{dir = 2},/area/station/security/main)
 "XF" = (/obj/machinery/light/emergency{dir = 8},/turf/simulated/floor/carpet{dir = 9; icon_state = "fblue6"},/area/station/bridge)
 "XG" = (/obj/machinery/vending/medical,/turf/simulated/floor/carpet/grime,/area/station/medical/medbay)
@@ -1909,13 +1930,16 @@
 "Yf" = (/obj/machinery/recharge_station{allow_clothes = 1},/obj/decal/mule/dropoff,/turf/simulated/floor/circuit/off,/area/station/medical/robotics)
 "Yg" = (/obj/machinery/door/airlock/pyro/command{dir = 1},/obj/access_spawn/head_of_personnel,/obj/firedoor_spawn,/turf/simulated/floor/delivery,/area/station/security/checkpoint/west)
 "Yh" = (/obj/item/device/radio/intercom/medical{pixel_x = 29; pixel_y = -3},/turf/simulated/floor/bluewhite{dir = 4},/area/station/medical/medbay/surgery/storage)
+"Yj" = (/turf/simulated/floor/greenwhite{dir = 2},/area)
 "Yl" = (/obj/table/glass/reinforced/auto,/obj/item/reagent_containers/food/drinks/tea{pixel_x = 4; pixel_y = 9},/turf/simulated/floor/carpet/green/standard,/area/station/medical/breakroom)
+"Yn" = (/obj/decal/tile_edge/line/green{dir = 10; icon_state = "line2"},/turf/simulated/floor/white,/area)
 "Yp" = (/obj/securearea{desc = "A warning sign which reads 'Fire Hazard'"; icon_state = "fire"; layer = 3; name = "FIRE HAZARD"},/turf/simulated/wall/r_wall,/area/station/science/lab)
 "Yq" = (/obj/decal/tile_edge/line/purple{dir = 10; icon_state = "line1"},/turf/simulated/floor/black,/area/station/science)
 "Ys" = (/obj/stool/bed,/obj/item/clothing/glasses/vr{network = "arcadevr"},/obj/decal/tile_edge/line/grey{dir = 4; icon_state = "tile1"},/turf/simulated/floor/black/grime,/area/station/security/brig/north_side)
 "Yt" = (/turf/simulated/floor/carpet/blue/decal{dir = 8},/area/station/hallway)
 "Yv" = (/obj/grille/catwalk/jen,/obj/decal/tile_edge/stripe{dir = 4},/obj/decal/tile_edge/stripe{dir = 2},/obj/decal/cleanable/dirt/jen,/turf/simulated/floor/plating/jen,/area/station/maintenance/inner/west)
 "Yw" = (/obj/item/device/radio/intercom/medical{pixel_x = -26; pixel_y = -2},/turf/simulated/floor/specialroom/freezer,/area/station/medical/morgue)
+"Yx" = (/obj/decal/tile_edge/line/green{dir = 1; icon_state = "line1"},/turf/simulated/floor/white,/area)
 "YA" = (/obj/wingrille_spawn/reinforced/full,/obj/window_blinds/cog2/middle,/turf/simulated/floor/plating,/area/station/medical/medbay/cloner)
 "YB" = (/obj/machinery/flasher/solitary{id = "solitary_2"; name = "\improper Mounted Flash (Cell #2)"; pixel_x = 0; pixel_y = -24},/turf/simulated/floor/black,/area/station/security/brig/solitary)
 "YC" = (/obj/decal/cleanable/rust/jen,/obj/grille/catwalk/jen,/obj/decal/cleanable/dirt/jen,/obj/decal/tile_edge/stripe{dir = 1},/turf/simulated/floor/plating/jen,/area/station/maintenance/inner/sw)
@@ -1964,7 +1988,6 @@
 "ZG" = (/obj/storage/secure/closet/animal,/turf/simulated/floor/grass,/area/station/medical/dome)
 "ZH" = (/obj/storage/crate{desc = "Wow! Crate may or may not still contain bottles."; name = "Bottles in a Crate"},/obj/item/reagent_containers/food/drinks/bottle{pixel_x = -8; pixel_y = -2},/obj/item/reagent_containers/food/drinks/bottle{pixel_x = 0; pixel_y = -2},/obj/item/reagent_containers/food/drinks/bottle{pixel_x = 8; pixel_y = -2},/obj/item/reagent_containers/food/drinks/bottle{pixel_x = -4; pixel_y = 10},/obj/item/reagent_containers/food/drinks/bottle{pixel_x = 4; pixel_y = 10},/turf/simulated/floor/purpleblack/corner,/area/station/chemistry)
 "ZI" = (/obj/storage/closet/biohazard,/obj/item/reagent_containers/emergency_injector/spaceacillin,/obj/decal/tile_edge/line/purple{dir = 4; icon_state = "line1"},/turf/simulated/floor/black,/area/station/crew_quarters/hor)
-"ZJ" = (/obj/machinery/computer/pathology{dir = 1},/turf/simulated/floor/white,/area)
 "ZK" = (/obj/decal/poster/wallsign/cdnp{pixel_x = 32; pixel_y = 0},/obj/decal/tile_edge/line/grey{dir = 4; icon_state = "tile1"},/turf/simulated/floor/black/grime,/area/station/security/brig/north_side)
 "ZM" = (/obj/random_item_spawner/tableware,/obj/table/wood/round/auto,/turf/simulated/floor/black,/area/station/hallway)
 "ZN" = (/obj/decal/tile_edge/line/purple{dir = 10; icon_state = "line2"},/turf/simulated/floor/black,/area/station/science)
@@ -2185,25 +2208,25 @@ OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
 OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyzKrarararaUvUvUvUvUvUvUvUvUvUvrararakQLWLWLWLWLWLWHsPscooeLqoyrMEOYFoykQkQkQQvQvDYXoXoXoXoXoXoXoXoXoXoXoruhzruhzruhzruhzruhzruhzruILspYAYAYAYAPSweweweweweweweweweweweweweweClClClOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
 OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOykQLWLWLWLWLWLWHsHsHsuOuOoynaoyoyoyNckukukukukukukukukukukuWCkukukukPkukukukukukukukukukukukukukPkukukukukukukukukukukukukukukukukukuNjNjNjNjNjNjNjNjOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
 OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOykQLWLWLWLWLWLWHsgDVsDnjNuOVscSCMHsuZmxmxmxmxmxmxmxmxmxmxmxmxmxmxmxFAmxmxmxmxmxmxmxmxmxmxmxmxmxFAmxmxmxmxmxmxmxmxmxmxmxmxmxmxmxmxmxmxxKxKxKxKxKxKxKxKOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOykQroLWLWLWLWLWHsHsHsHsgsHsHsHsHsHsuZmxiUNoNoNoNoNoNoNoNoNoNoNoNoNokPNoNoNoNoNoNoNoNoNoNoNoNoNokPNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoQjQjQjQjQjQjQjQjQjQjQjOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyVupVOyOyOyOyOyOyOyOyOyOyOyOyOykQroLWLWLWLWLWHsHsHsHsgsHsHsHsHsHsuZmxiUNoNoNoNoNoNoNoNoNoNoNoNoNokPNoNoNoNoNoNoNoNoNoNoNoNoNokPNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoQjQjQjQjQjQjQjQjQjQjQjOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
 OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyHbLWLWLWLWLWLWLWLWkTlckutUkukukukuhkmxwBWKuxuxxbxbxbxbxbxbWKxbxbxbWKxfxfxfxfxfxfxfxfxfXjvMphgdXjjzjzjzXjXjXjXjXjXjXjXjLLLLLLkKLLLLLLLLdiClClClClClClClOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyHbLWLWLWLWLWLWLWLWihmxmxmxmxmxmxmxmxmxwBywrfulcCcCqVwYYJnNvhNSoYTVWKxfxfxfxfxfxfxfxfxfpUZTZTZTTEKdzTOGPhzlylQhnFkWZpesNaLMwzvavayTkVLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyHbLWLWLWLWLWLWLWLWDiNoNoNoNoiBiBiBiBNoGyloululKDululnxulFgWKMPoYQkWKTJxfxfxfxfxfxfxfxfQgZTWZZTeYesVSesDwesLNeswvMRDGespctlwzvavayTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOykQkQkQweweweweANweweweslslslHGHGHGHGslslslpiulUTJmJmgtulZiOtoYoYezWKTJMuMuMuTJTJLITJTJXjZTZTZTTEesVSesDwesxWesRDdcDFespctlwzvavayTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyslslslqlqlqlqlslslslKjGPECuAgryYulZHTAWKWKWKWKlUxIstYPyfRlxfDmyfXjTETETEXjwseWDPDPwFylGfQRBczBMyNatlwzvavayTGLLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyslslMQaAaAaAaABrslslzgulECCPyeyYulnExbfOZYZYBWnqZvTQQEyfejSFPWyfsUuXPUTkyfMuMuQsMuMuyfyfMuMuMuyfNatlwzvavayTIlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydididididididididiOyOyOyOyOyOyHFaAaAaAaAaAaAaAOQHGObulkYQDQDLZulhbOtwqLnLnCvrLSpSpwRyflqxfXJyfhfhfrzUXKtZYZYZYZYZYZYZYZYZYZYVzpcdVNLvavayTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydidiDWVAhGZJiywIDWdidiOyOyOyOyOyslaAaAaAiGBUaAaAaAgXulululululKDululxbUaxDLnJtszszszGIyfyfLsyfyfZwszszszIcLnLnLnLnLnLnLnLnLnLndHmZFzTqFLvayTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydidiqYqYqYqYqYqYqYqYqYdidiOyOyOyOyslslqnaAaAaAaAWmslslululPXqRPnTRulHCTAJDwqLnLnLnLnLnDpZYZYZYZYZYWkLnLnLnLnLnUCDrDrDrDrDrDrDrDrzkpcyTeLgnhyyTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydiqYqYqYqYqYxdqYqYqYqYqYdiOyOyOyOyslslsliGiGiGiGslslsluiuiuiuiuiuiuiuiuiyfwqLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLndHMAMAMAMAcGMAMAMAMALLLLLLLLLLLLLLLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydidillEawarCaUtrrNllEadidididididihOsgslHGHGHGHGslPkKWWaPRPRwldBDVsFsBWatJwqLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnpfRczVGtDLgKzLmoXsEiFNMAOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydiqYqYqYqYqYqYqYqYqYqYqYdiqYqYqYdiXnEudkKLKBmuKLdkoSTpWaclNqNqJuNqNqQYWatJwqLnoLMuMuMuMuMuMuMuMuMuMuMuVGLnVaEwbGIRAjUBdbrWxzGhjmxhOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydiqYqYqYqYqYqYqYqYqYqYqYBRqYqYqYBRXnLnLnLnLnLnLnLnLnTpWahsRSrkJuIuifnWWatJwqLnQLMuDSDSDSDSDSDSDSDSDSMuDeLnVaWrIdIRRUivpMrWNvuPSvCfOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydididizKqYzKdizKqYzKdididiqYqYqYdiZNoCoCoCoCoCoCYqLnTpWaWaWaWaKTWaWaWaWayfwqLnpbMurjrjrjrjrjrjrjrjrjMurgLnVaoNgGIRLQivjEorxquPZIXTOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydiqYqYqYqYdiqYqYqYqYdiOydidididiTJTJTJTJMuMuTJXnLnEudkdkdkHaZYZYZYZYZYZYWkLngWMuMuMuMuMuMuMuMuMuMuMuSiLnVaWrlWyRXpVekljsklXrGGMAOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydiqYqYqYqYdiqYqYqYqYdiOydikdkdkdkdkdkdAOuVYVTJXnLnLnLnLnLnOELnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnVaiVnQMAMAErgFgFgFpGMAMAOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydididididididididididiOyAOAOAOAOAOAOAOAOdndnTJZNoCoCoCoCoCvYDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDroHXfidTJOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
-OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyAOBFBFBFBFBFBFAOJYJYTJJGMuKPMuTJyfNhNhXNXNXNNhNhXNXNLVEEyfyfLhXhXhXhXhLhXhnlXhqiqSqNTJTJOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyVutSdfdfdftSmwOyOyOyOyOyOyOyOyOyOyHbLWLWLWLWLWLWLWLWihmxmxmxmxmxmxmxmxmxwBywrfulcCcCqVwYYJnNvhNSoYTVWKxfxfxfxfxfxfxfxfxfpUZTZTZTTEKdzTOGPhzlylQhnFkWZpesNaLMwzvavayTkVLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyBjtSdfdfdftSBjOyOyOyOyOyOyOyOyOyOyHbLWLWLWLWLWLWLWLWDiNoNoNoNoiBiBiBiBNoGyloululKDululnxulFgWKMPoYQkWKTJxfxfxfxfxfxfxfxfQgZTWZZTeYesVSesDwesLNeswvMRDGespctlwzvavayTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOygQYRdwvDYRdwgQOyOyOyOyOyOyOyOyOyOykQkQkQweweweweANweweweslslslHGHGHGHGslslslpiulUTJmJmgtulZiOtoYoYezWKTJMuMuMuTJTJLITJTJXjZTZTZTTEesVSesDwesxWesRDdcDFespctlwzvavayTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyEKUjLJRWBNoMEKOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyslslslqlqlqlqlslslslKjGPECuAgryYulZHTAWKWKWKWKlUxIstYPyfRlxfDmyfXjTETETEXjwseWDPDPwFylGfQRBczBMyNatlwzvavayTGLLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyEKqtRWRWBNoMEKOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyslslMQaAaAaAaABrslslzgulECCPyeyYulnExbfOZYZYBWnqZvTQQEyfejSFPWyfsUuXPUTkyfMuMuQsMuMuyfyfMuMuMuyfNatlwzvavayTIlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyHKBjqtRWRWOCImBjrtOyOyOyOyOydididididididididiOyOyOyOyOyOyHFaAaAaAaAaAaAaAOQHGObulkYQDQDLZulhbOtwqLnLnCvrLSpSpwRyflqxfXJyfhfhfrzUXKtZYZYZYZYZYZYZYZYZYZYVzpcdVNLvavayTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyLRJMYRdwFyYRdwNdTuOyOyOydididiIsFXWqXCWPHeIsdididiOyOyOyOyslaAaAaAiGBUaAaAaAgXulululululKDululxbUaxDLnJtszszszGIyfyfLsyfyfZwszszszIcLnLnLnLnLnLnLnLnLnLndHmZFzTqFLvayTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyBgBgOyOypKOyOyBgBgOyOyOydiLcWIOjOjOjOjOjOjOjDbeDdiOyOyOyOyslslqnaAaAaAaAWmslslululPXqRPnTRulHCTAJDwqLnLnLnLnLnDpZYZYZYZYZYWkLnLnLnLnLnUCDrDrDrDrDrDrDrDrzkpcyTeLgnhyyTtlLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydiEzSPYjYjYjpXhNYjYjLwEzdiOyOyOydislslsliGiGiGiGslslsluiuiuiuiuiuiuiuiuiyfwqLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLndHMAMAMAMAcGMAMAMAMALLLLLLLLLLLLLLLLOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydidizKzKdidillEawarCaUtrrNllEadidididididihOsgslHGHGHGHGslPkKWWaPRPRwldBDVsFsBWatJwqLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnpfRczVGtDLgKzLmoXsEiFNMAOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyzKqYqYqYBRqhYxYxYxYxYxYxYxYxYxtmdiqYqYqYdiXnEudkKLKBmuKLdkoSTpWaclNqNqJuNqNqQYWatJwqLnoLMuMuMuMuMuMuMuMuMuMuMuVGLnVaEwbGIRAjUBdbrWxzGhjmxhOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyzKqYqYqYdiYnNTNTNTNTNTNTNTNTNTGebBqYqYqYbBXnLnLnLnLnLnLnLnLnTpWahsRSrkJuIuifnWWatJwqLnQLMuDSDSDSDSDSDSDSDSDSMuDeLnVaWrIdIRRUivpMrWNvuPSvCfOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyzxOyOyOyzKqYqYdidididizKfGzKdizKfGzKdididiqYqYqYdiZNoCoCoCoCoCoCYqLnTpWaWaWaWaKTWaWaWaWayfwqLnpbMurjrjrjrjrjrjrjrjrjMurgLnVaoNgGIRLQivjEorxquPZIXTOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydiqYqYqYdididiqYqYdiOydiBvkfBvkfdiBvkfBvkfdidididididiTJTJTJTJMuMuTJXnLnEudkdkdkHaZYZYZYZYZYZYWkLngWMuMuMuMuMuMuMuMuMuMuMuSiLnVaWrlWyRXpVekljsklXrGGMAOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyzKqYqYqYqYqYqYqYqYzKOydiEgiSEgiSdiEgiSEgiSdiOydikdkdkdkdkdkdAOuVYVTJXnLnLnLnLnLnOELnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnLnVaiVnQMAMAErgFgFgFpGMAMAOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyzKqYqYqYqYqYqYqYqYzKOydididididididididididiOyAOAOAOAOAOAOAOAOdndnTJZNoCoCoCoCoCvYDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDrDroHXfidTJOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
+OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOydididizKzKzKzKdididiOyOyOyOyOyOyOyOyOyOyOyOyOyAOBFBFBFBFBFBFAOJYJYTJJGMuKPMuTJyfNhNhXNXNXNNhNhXNXNLVEEyfyfLhXhXhXhXhLhXhnlXhqiqSqNTJTJOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
 OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyYpAOAOAOAONVAOAOAOAONVAOTFjZAOdAlElElEAOgzNhoxftkqwZnjXNfxIWqcEExJxJLhGDGDGDGDMsvzZjFUXhRMskuKOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
 OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyZrSGCFpqpqFQJZyqhgzrJizrxwcIjGlElEfaAOgzNhAhehAhehAhXNQUCOoBEEEEEELhGDGDGDGDeyaCaCaCXhRMzDuKOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
 OyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyZrSGghiIpqpqLmzrzrxoxixiuCcIsElElEKcAOgzNhuEvOkUeZoVsfNPEWazGHcNEELhGmGDGDGDxxKIhQNOfzoaIYdiOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOyOy
